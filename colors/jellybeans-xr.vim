@@ -182,10 +182,6 @@ exe "hi! WarningMsg"    .s:fg_red         .s:bg_none        .s:fmt_none
 " ----------------------------------------------------------------------------
 exe "hi! Comment"         .s:fg_comment     .s:bg_none        .s:fmt_none
 
-exe "hi! SignifySignAdd"       .s:fg_addfg       .s:bg_none        .s:fmt_none
-exe "hi! SignifySignChange"    .s:fg_changefg    .s:bg_none        .s:fmt_none
-exe "hi! SignifySignDelete"    .s:fg_deletefg    .s:bg_none        .s:fmt_none
-
 exe "hi! Constant"        .s:fg_red         .s:bg_none        .s:fmt_none
 exe "hi! String"          .s:fg_green       .s:bg_none        .s:fmt_none
 "		Character"
@@ -258,6 +254,13 @@ hi! link diffAdded Special
 "		diffComment
 
 "}}}
+" Custom Syntax Highlighting: "{{{
+
+exe "hi! SignifySignAdd"       .s:fg_addfg       .s:bg_none        .s:fmt_none
+exe "hi! SignifySignChange"    .s:fg_changefg    .s:bg_none        .s:fmt_none
+exe "hi! SignifySignDelete"    .s:fg_deletefg    .s:bg_none        .s:fmt_none
+
+" }}}
 " Legal:"{{{
 " ----------------------------------------------------------------------------
 " Copyright (c) 2011 Ethan Schoonover
