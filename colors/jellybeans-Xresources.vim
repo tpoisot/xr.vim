@@ -1,7 +1,7 @@
-" File:       hybrid.vim
-" Maintainer: Andrew Wong (w0ng)
-" URL:        https://github.com/w0ng/jellybeans-Xresources.vim
-" Modified:   08 Mar 2013 04:45 AM AEST
+" File:       jellybeans-xr.vim
+" Maintainer: Timothée Poisot (tpoisot)
+" URL:        https://github.com/tpoisot/jellybeans-Xresources.vim
+" Modified:   28 Mar 2014 04:45 AM AEST
 " License:    MIT
 
 " Description:"{{{
@@ -33,7 +33,7 @@ if exists("syntax_on")
   syntax reset
 endif
 
-let colors_name = "jellybeans-Xresources"
+let colors_name = "jellybeans-xr"
 
 "}}}
 " Cterm Palette:"{{{
