@@ -261,7 +261,7 @@ exe "hi! SignifySignChange"    .s:fg_changefg    .s:bg_none        .s:fmt_none
 exe "hi! SignifySignDelete"    .s:fg_deletefg    .s:bg_none        .s:fmt_none
 
 exe "hi! conceal"              .s:fg_red         .s:bg_none        .s:fmt_bold
-exe "hi! pandocBlockQuote"     .s:fg_aqua        .s:bg_none        .s:fmt_bold
+exe "hi! pandocBlockQuote"     .s:fg_aqua        .s:bg_none        .s:fmt_none
 
 " }}}
 " Legal:"{{{
