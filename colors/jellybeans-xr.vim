@@ -93,6 +93,7 @@ exe "let s:bg_addbg      = ' ctermbg=".s:addbg     ."'"
 exe "let s:bg_addfg      = ' ctermbg=".s:addfg     ."'"
 exe "let s:bg_changebg   = ' ctermbg=".s:changebg  ."'"
 exe "let s:bg_changefg   = ' ctermbg=".s:changefg  ."'"
+exe "let s:bg_deletefg   = ' ctermbg=".s:red       ."'"
 
 exe "let s:fg_none       = ' ctermfg=".s:none      ."'"
 exe "let s:fg_foreground = ' ctermfg=".s:foreground."'"
@@ -183,7 +184,7 @@ exe "hi! Comment"         .s:fg_comment     .s:bg_none        .s:fmt_none
 
 exe "hi! SignifySignAdd"       .s:fg_addfg       .s:bg_none        .s:fmt_none
 exe "hi! SignifySignChange"    .s:fg_changefg    .s:bg_none        .s:fmt_none
-exe "hi! SignifySignDelete"    .s:fg_background  .s:bg_none        .s:fmt_none
+exe "hi! SignifySignDelete"    .s:fg_deletefg    .s:bg_none        .s:fmt_none
 
 exe "hi! Constant"        .s:fg_red         .s:bg_none        .s:fmt_none
 exe "hi! String"          .s:fg_green       .s:bg_none        .s:fmt_none
