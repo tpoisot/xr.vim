@@ -260,7 +260,7 @@ exe "hi! SignifySignAdd"       .s:fg_addfg       .s:bg_none        .s:fmt_none
 exe "hi! SignifySignChange"    .s:fg_changefg    .s:bg_none        .s:fmt_none
 exe "hi! SignifySignDelete"    .s:fg_deletefg    .s:bg_none        .s:fmt_none
 
-exe "hi! AtxHeader"            .s:fg_orange      .s:bg_none        .s:fmt_bold
+exe "hi! conceal"              .s:fg_orange      .s:bg_none        .s:fmt_bold
 
 " }}}
 " Legal:"{{{
