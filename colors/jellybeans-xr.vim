@@ -263,7 +263,7 @@ exe "hi! SignifySignDelete"    .s:fg_deletefg    .s:bg_none        .s:fmt_none
 exe "hi! conceal"              .s:fg_red         .s:bg_none        .s:fmt_bold
 exe "hi! pandocBlockQuote"     .s:fg_aqua        .s:bg_none        .s:fmt_none
 
-exe "hi! juliaRepeat"          .s:fg_orange      .s:bg_none        .s:fmt_none
+exe "hi! juliaRepeat"          .s:fg_yellow      .s:bg_none        .s:fmt_none
 exe "hi! juliaBlKeyword"       .s:fg_aqua        .s:bg_none        .s:fmt_none
 
 " }}}
