@@ -256,14 +256,20 @@ hi! link diffAdded Special
 "}}}
 " Custom Syntax Highlighting: "{{{
 
-exe "hi! SignifySignAdd"       .s:fg_addfg       .s:bg_none        .s:fmt_none
-exe "hi! SignifySignChange"    .s:fg_changefg    .s:bg_none        .s:fmt_none
-exe "hi! SignifySignDelete"    .s:fg_deletefg    .s:bg_none        .s:fmt_none
+exe "hi! SignifySignAdd"       .s:fg_addfg         .s:bg_none        .s:fmt_none
+exe "hi! SignifySignChange"    .s:fg_changefg      .s:bg_none        .s:fmt_none
+exe "hi! SignifySignDelete"    .s:fg_deletefg      .s:bg_none        .s:fmt_none
 
-exe "hi! pandocBlockQuote"     .s:fg_aqua        .s:bg_none        .s:fmt_none
+exe "hi! pandocBlockQuote"     .s:fg_aqua          .s:bg_none        .s:fmt_none
+exe "hi! pandocAtxHeader"      .s:fg_green         .s:bg_none        .s:fmt_bold
 
-exe "hi! juliaRepeat"          .s:fg_yellow      .s:bg_none        .s:fmt_none
-exe "hi! juliaBlKeyword"       .s:fg_aqua        .s:bg_none        .s:fmt_none
+exe "hi! pandocReferenceLabel"                 .s:fg_orange       .s:bg_none        .s:fmt_none
+exe "hi! pandocReferenceDefinitionLabel"       .s:fg_orange       .s:bg_none        .s:fmt_none
+exe "hi! pandocReferenceURL"                   .s:fg_yellow       .s:bg_none        .s:fmt_none
+exe "hi! pandocReferenceDefinitionAddress"     .s:fg_yellow       .s:bg_none        .s:fmt_none
+
+exe "hi! juliaRepeat"          .s:fg_yellow        .s:bg_none        .s:fmt_none
+exe "hi! juliaBlKeyword"       .s:fg_aqua          .s:bg_none        .s:fmt_none
 
 " }}}
 " Legal:"{{{
