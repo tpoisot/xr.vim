@@ -263,6 +263,8 @@ exe "hi! SignifySignDelete"    .s:fg_deletefg      .s:bg_none        .s:fmt_none
 exe "hi! pandocBlockQuote"     .s:fg_aqua          .s:bg_none        .s:fmt_none
 exe "hi! pandocAtxHeader"      .s:fg_green         .s:bg_none        .s:fmt_bold
 
+exe "hi! Conceal"              .s:fg_yellow        .s:bg_none        .s:fmt_none
+
 exe "hi! pandocReferenceLabel"                 .s:fg_orange       .s:bg_none        .s:fmt_none
 exe "hi! pandocReferenceDefinitionLabel"       .s:fg_orange       .s:bg_none        .s:fmt_none
 exe "hi! pandocReferenceURL"                   .s:fg_comment      .s:bg_none        .s:fmt_none
