@@ -273,7 +273,7 @@ exe "hi! pandocReferenceDefinitionAddress"     .s:fg_comment      .s:bg_none    
 exe "hi! juliaRepeat"          .s:fg_yellow        .s:bg_none        .s:fmt_none
 exe "hi! juliaBlKeyword"       .s:fg_aqua          .s:bg_none        .s:fmt_none
 
-exe "hi! rDelimiter"       .s:fg_magenta          .s:bg_none        .s:fmt_none
+exe "hi! rDelimiter"       .s:fg_purple           .s:bg_none        .s:fmt_none
 exe "hi! rDollar"          .s:fg_yellow           .s:bg_none        .s:fmt_none
 
 " }}}
