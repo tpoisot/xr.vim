@@ -1,4 +1,4 @@
-" File:       jellybeans-xr.vim
+" File:       xr.vim
 " Maintainer: Timothée Poisot (tpoisot)
 " URL:        https://github.com/tpoisot/jellybeans-Xresources.vim
 " Modified:   28 Mar 2014 04:45 AM AEST
@@ -33,7 +33,7 @@ if exists("syntax_on")
   syntax reset
 endif
 
-let colors_name = "jellybeans-xr"
+let colors_name = "xr"
 
 "}}}
 " Cterm Palette:"{{{
