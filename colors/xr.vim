@@ -50,9 +50,11 @@ let colors_name = "xr"
   let s:selection  = "8"    " DarkGrey
   let s:line       = "0"    " Black
   let s:comment    = "7"    " LightGrey
-  let s:red        = "9"
-  let s:orange     = "3"
-  let s:yellow     = "11"
+ 
+  let s:red         = "1"
+  let s:lred        = "9"
+  let s:yellow     = "3"
+  let s:lyellow     = "11"
   let s:green      = "10"
   let s:aqua       = "14"
   let s:blue       = "12"
@@ -81,7 +83,7 @@ exe "let s:bg_selection  = ' ctermbg=".s:selection ."'"
 exe "let s:bg_line       = ' ctermbg=".s:line      ."'"
 exe "let s:bg_comment    = ' ctermbg=".s:comment   ."'"
 exe "let s:bg_red        = ' ctermbg=".s:red       ."'"
-exe "let s:bg_orange     = ' ctermbg=".s:orange    ."'"
+exe "let s:bg_lyellow     = ' ctermbg=".s:lyellow    ."'"
 exe "let s:bg_yellow     = ' ctermbg=".s:yellow    ."'"
 exe "let s:bg_green      = ' ctermbg=".s:green     ."'"
 exe "let s:bg_aqua       = ' ctermbg=".s:aqua      ."'"
@@ -101,7 +103,7 @@ exe "let s:fg_selection  = ' ctermfg=".s:selection ."'"
 exe "let s:fg_line       = ' ctermfg=".s:line      ."'"
 exe "let s:fg_comment    = ' ctermfg=".s:comment   ."'"
 exe "let s:fg_red        = ' ctermfg=".s:red       ."'"
-exe "let s:fg_orange     = ' ctermfg=".s:orange    ."'"
+exe "let s:fg_lyellow     = ' ctermfg=".s:lyellow    ."'"
 exe "let s:fg_yellow     = ' ctermfg=".s:yellow    ."'"
 exe "let s:fg_green      = ' ctermfg=".s:green     ."'"
 exe "let s:fg_aqua       = ' ctermfg=".s:aqua      ."'"
@@ -206,7 +208,7 @@ exe "hi! PreProc"         .s:fg_aqua        .s:bg_none        .s:fmt_none
 "		Macro"
 "		PreCondit"
 
-exe "hi! Type"            .s:fg_orange      .s:bg_none        .s:fmt_none
+exe "hi! Type"            .s:fg_lyellow      .s:bg_none        .s:fmt_none
 "		StorageClass"
 exe "hi! Structure"       .s:fg_aqua        .s:bg_none        .s:fmt_none
 "		Typedef"
@@ -265,8 +267,8 @@ exe "hi! pandocAtxHeader"      .s:fg_green         .s:bg_none        .s:fmt_bold
 
 exe "hi! Conceal"              .s:fg_yellow        .s:bg_none        .s:fmt_none
 
-exe "hi! pandocReferenceLabel"                 .s:fg_orange       .s:bg_none        .s:fmt_none
-exe "hi! pandocReferenceDefinitionLabel"       .s:fg_orange       .s:bg_none        .s:fmt_none
+exe "hi! pandocReferenceLabel"                 .s:fg_lyellow       .s:bg_none        .s:fmt_none
+exe "hi! pandocReferenceDefinitionLabel"       .s:fg_lyellow       .s:bg_none        .s:fmt_none
 exe "hi! pandocReferenceURL"                   .s:fg_comment      .s:bg_none        .s:fmt_none
 exe "hi! pandocReferenceDefinitionAddress"     .s:fg_comment      .s:bg_none        .s:fmt_none
 
