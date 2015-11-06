@@ -46,7 +46,7 @@ let colors_name = "xr"
   let s:changebg   = "60"
   let s:changefg   = "189"
 
-   if background == "dark"
+   if &background == "dark"
       let s:foreground = "15"   " White
       let s:selection  = "0"    " DarkGrey
       let s:line       = "7"    " Black
