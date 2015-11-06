@@ -46,28 +46,42 @@ let colors_name = "xr"
   let s:changebg   = "60"
   let s:changefg   = "189"
 
-  let s:foreground = "15"   " White
-  let s:selection  = "0"    " DarkGrey
-  let s:line       = "7"    " Black
-  let s:comment    = "8"    " LightGrey
- 
-  let s:red         = "1"
-  let s:lred        = "9"
+   if background == "dark"
+      let s:foreground = "15"   " White
+      let s:selection  = "0"    " DarkGrey
+      let s:line       = "7"    " Black
+      let s:comment    = "8"    " LightGrey
+      let s:red         = "9"
+      let s:lred        = "1"
+      let s:green       = "10"
+      let s:lgreen      = "2"
+      let s:yellow      = "11"
+      let s:lyellow     = "3"
+      let s:blue        = "12"
+      let s:lblue       = "4"
+      let s:magenta     = "13"
+      let s:lmagenta    = "5"
+      let s:cyan        = "14"
+      let s:lcyan       = "6"
+   else
+      let s:foreground = "0"   " White
+      let s:selection  = "15"    " DarkGrey
+      let s:line       = "8"    " Black
+      let s:comment    = "7"    " LightGrey
+      let s:red         = "1"
+      let s:lred        = "9"
+      let s:green       = "2"
+      let s:lgreen      = "10"
+      let s:yellow      = "3"
+      let s:lyellow     = "11"
+      let s:blue        = "4"
+      let s:lblue       = "12"
+      let s:magenta     = "5"
+      let s:lmagenta    = "13"
+      let s:cyan        = "6"
+      let s:lcyan       = "14"
+   endif
 
-  let s:green       = "2"
-  let s:lgreen      = "10"
-
-  let s:yellow      = "3"
-  let s:lyellow     = "11"
-
-  let s:blue        = "4"
-  let s:lblue       = "12"
-
-  let s:magenta     = "5"
-  let s:lmagenta    = "13"
-
-  let s:cyan        = "6"
-  let s:lcyan       = "14"
 
 "}}}
 " Formatting Options:"{{{
