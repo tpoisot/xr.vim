@@ -41,10 +41,10 @@ let colors_name = "xr"
   let s:background = "235"
   let s:window     = "236"
   let s:darkcolumn = "235"
-  let s:addbg      = "65"
-  let s:addfg      = "193"
-  let s:changebg   = "60"
-  let s:changefg   = "189"
+  let s:addbg      = "0"
+  let s:addfg      = "2"
+  let s:changebg   = "0"
+  let s:changefg   = "4"
 
    if &background == "dark"
       let s:foreground = "15"   " White
@@ -173,7 +173,7 @@ exe "hi! FoldColumn"    .s:fg_none        .s:bg_none        .s:fmt_none
 exe "hi! SignColumn"    .s:fg_none        .s:bg_none        .s:fmt_none
 "		Incsearch"
 exe "hi! LineNr"        .s:fg_selection   .s:bg_none        .s:fmt_none
-exe "hi! CursorLineNr"  .s:fg_yellow      .s:bg_none        .s:fmt_bold
+exe "hi! CursorLineNr"  .s:fg_foreground  .s:bg_none        .s:fmt_bold
 exe "hi! MatchParen"    .s:fg_background  .s:bg_changebg    .s:fmt_none
 exe "hi! ModeMsg"       .s:fg_green       .s:bg_none        .s:fmt_none
 exe "hi! MoreMsg"       .s:fg_green       .s:bg_none        .s:fmt_none
@@ -281,9 +281,9 @@ hi! link diffAdded Special
 "}}}
 " Custom Syntax Highlighting: "{{{
 
-exe "hi! SignifySignAdd"       .s:fg_addfg         .s:bg_none        .s:fmt_none
-exe "hi! SignifySignChange"    .s:fg_changefg      .s:bg_none        .s:fmt_none
-exe "hi! SignifySignDelete"    .s:fg_deletefg      .s:bg_none        .s:fmt_none
+exe "hi! SignifySignAdd"       .s:fg_green         .s:bg_none        .s:fmt_none
+exe "hi! SignifySignChange"    .s:fg_blue          .s:bg_none        .s:fmt_none
+exe "hi! SignifySignDelete"    .s:fg_red           .s:bg_none        .s:fmt_none
 
 exe "hi! pandocBlockQuote"     .s:fg_cyan          .s:bg_none        .s:fmt_none
 exe "hi! pandocAtxHeader"      .s:fg_green         .s:bg_none        .s:fmt_bold
