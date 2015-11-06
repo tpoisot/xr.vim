@@ -60,7 +60,7 @@ let colors_name = "xr"
   let s:yellow      = "3"
   let s:lyellow     = "11"
 
-  let s:bluea       = "4"
+  let s:blue        = "4"
   let s:lblue       = "12"
 
   let s:magenta     = "5"
