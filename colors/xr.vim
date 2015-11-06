@@ -47,18 +47,27 @@ let colors_name = "xr"
   let s:changefg   = "189"
 
   let s:foreground = "15"   " White
-  let s:selection  = "8"    " DarkGrey
-  let s:line       = "0"    " Black
-  let s:comment    = "7"    " LightGrey
+  let s:selection  = "0"    " DarkGrey
+  let s:line       = "7"    " Black
+  let s:comment    = "8"    " LightGrey
  
   let s:red         = "1"
   let s:lred        = "9"
-  let s:yellow     = "3"
+
+  let s:green       = "2"
+  let s:lgreen      = "10"
+
+  let s:yellow      = "3"
   let s:lyellow     = "11"
-  let s:green      = "10"
-  let s:aqua       = "14"
-  let s:blue       = "12"
-  let s:purple     = "13"
+
+  let s:bluea       = "4"
+  let s:lblue       = "12"
+
+  let s:magenta     = "5"
+  let s:lmagenta    = "13"
+
+  let s:cyan        = "6"
+  let s:lcyan       = "14"
 
 "}}}
 " Formatting Options:"{{{
@@ -86,9 +95,9 @@ exe "let s:bg_red        = ' ctermbg=".s:red       ."'"
 exe "let s:bg_lyellow     = ' ctermbg=".s:lyellow    ."'"
 exe "let s:bg_yellow     = ' ctermbg=".s:yellow    ."'"
 exe "let s:bg_green      = ' ctermbg=".s:green     ."'"
-exe "let s:bg_aqua       = ' ctermbg=".s:aqua      ."'"
+exe "let s:bg_cyan       = ' ctermbg=".s:cyan      ."'"
 exe "let s:bg_blue       = ' ctermbg=".s:blue      ."'"
-exe "let s:bg_purple     = ' ctermbg=".s:purple    ."'"
+exe "let s:bg_magenta     = ' ctermbg=".s:magenta    ."'"
 exe "let s:bg_window     = ' ctermbg=".s:window    ."'"
 exe "let s:bg_darkcolumn = ' ctermbg=".s:darkcolumn."'"
 exe "let s:bg_addbg      = ' ctermbg=".s:addbg     ."'"
@@ -106,9 +115,9 @@ exe "let s:fg_red        = ' ctermfg=".s:red       ."'"
 exe "let s:fg_lyellow     = ' ctermfg=".s:lyellow    ."'"
 exe "let s:fg_yellow     = ' ctermfg=".s:yellow    ."'"
 exe "let s:fg_green      = ' ctermfg=".s:green     ."'"
-exe "let s:fg_aqua       = ' ctermfg=".s:aqua      ."'"
+exe "let s:fg_cyan       = ' ctermfg=".s:cyan      ."'"
 exe "let s:fg_blue       = ' ctermfg=".s:blue      ."'"
-exe "let s:fg_purple     = ' ctermfg=".s:purple    ."'"
+exe "let s:fg_magenta     = ' ctermfg=".s:magenta    ."'"
 exe "let s:fg_window     = ' ctermfg=".s:window    ."'"
 exe "let s:fg_darkcolumn = ' ctermfg=".s:darkcolumn."'"
 exe "let s:fg_addbg      = ' ctermfg=".s:addbg     ."'"
@@ -165,8 +174,8 @@ exe "hi! Search"        .s:fg_background  .s:bg_yellow      .s:fmt_none
 exe "hi! SpecialKey"    .s:fg_selection   .s:bg_none        .s:fmt_none
 exe "hi! SpellBad"      .s:fg_red         .s:bg_none        .s:fmt_undr
 exe "hi! SpellCap"      .s:fg_blue        .s:bg_none        .s:fmt_undr
-exe "hi! SpellLocal"    .s:fg_aqua        .s:bg_none        .s:fmt_undr
-exe "hi! SpellRare"     .s:fg_purple      .s:bg_none        .s:fmt_undr
+exe "hi! SpellLocal"    .s:fg_cyan        .s:bg_none        .s:fmt_undr
+exe "hi! SpellRare"     .s:fg_magenta      .s:bg_none        .s:fmt_undr
 exe "hi! StatusLine"    .s:fg_comment     .s:bg_background  .s:fmt_revr
 exe "hi! StatusLineNC"  .s:fg_window      .s:bg_comment     .s:fmt_revr
 exe "hi! TabLine"       .s:fg_foreground  .s:bg_darkcolumn  .s:fmt_revr
@@ -191,18 +200,18 @@ exe "hi! String"          .s:fg_green       .s:bg_none        .s:fmt_none
 "		Boolean"
 "		Float"
 
-exe "hi! Identifier"      .s:fg_purple      .s:bg_none        .s:fmt_none
+exe "hi! Identifier"      .s:fg_magenta      .s:bg_none        .s:fmt_none
 exe "hi! Function"        .s:fg_yellow      .s:bg_none        .s:fmt_none
 
 exe "hi! Statement"       .s:fg_blue        .s:bg_none        .s:fmt_none
 "		Conditional"
 "		Repeat"
 "		Label"
-exe "hi! Operator"        .s:fg_aqua        .s:bg_none        .s:fmt_none
+exe "hi! Operator"        .s:fg_cyan        .s:bg_none        .s:fmt_none
 "		Keyword"
 "		Exception"
 
-exe "hi! PreProc"         .s:fg_aqua        .s:bg_none        .s:fmt_none
+exe "hi! PreProc"         .s:fg_cyan        .s:bg_none        .s:fmt_none
 "		Include"
 "		Define"
 "		Macro"
@@ -210,7 +219,7 @@ exe "hi! PreProc"         .s:fg_aqua        .s:bg_none        .s:fmt_none
 
 exe "hi! Type"            .s:fg_lyellow      .s:bg_none        .s:fmt_none
 "		StorageClass"
-exe "hi! Structure"       .s:fg_aqua        .s:bg_none        .s:fmt_none
+exe "hi! Structure"       .s:fg_cyan        .s:bg_none        .s:fmt_none
 "		Typedef"
 
 exe "hi! Special"         .s:fg_green       .s:bg_none        .s:fmt_none
@@ -262,7 +271,7 @@ exe "hi! SignifySignAdd"       .s:fg_addfg         .s:bg_none        .s:fmt_none
 exe "hi! SignifySignChange"    .s:fg_changefg      .s:bg_none        .s:fmt_none
 exe "hi! SignifySignDelete"    .s:fg_deletefg      .s:bg_none        .s:fmt_none
 
-exe "hi! pandocBlockQuote"     .s:fg_aqua          .s:bg_none        .s:fmt_none
+exe "hi! pandocBlockQuote"     .s:fg_cyan          .s:bg_none        .s:fmt_none
 exe "hi! pandocAtxHeader"      .s:fg_green         .s:bg_none        .s:fmt_bold
 
 exe "hi! Conceal"              .s:fg_yellow        .s:bg_none        .s:fmt_none
@@ -273,9 +282,9 @@ exe "hi! pandocReferenceURL"                   .s:fg_comment      .s:bg_none    
 exe "hi! pandocReferenceDefinitionAddress"     .s:fg_comment      .s:bg_none        .s:fmt_none
 
 exe "hi! juliaRepeat"          .s:fg_yellow        .s:bg_none        .s:fmt_none
-exe "hi! juliaBlKeyword"       .s:fg_aqua          .s:bg_none        .s:fmt_none
+exe "hi! juliaBlKeyword"       .s:fg_cyan          .s:bg_none        .s:fmt_none
 
-exe "hi! rDelimiter"       .s:fg_purple           .s:bg_none        .s:fmt_none
+exe "hi! rDelimiter"       .s:fg_magenta           .s:bg_none        .s:fmt_none
 exe "hi! rDollar"          .s:fg_yellow           .s:bg_none        .s:fmt_none
 
 " }}}
