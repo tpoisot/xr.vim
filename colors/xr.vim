@@ -48,8 +48,8 @@ let colors_name = "xr"
 
    let s:foreground = "15"   " White
    let s:selection  = "0"    " DarkGrey
-   let s:line       = "7"    " Black
-   let s:comment    = "15"    " LightGrey
+   let s:line       = "8"    " Black
+   let s:comment    = "7"    " LightGrey
    let s:red         = "1"
    let s:lred        = "9"
    let s:green       = "2"
@@ -153,8 +153,8 @@ exe "hi! Folded"        .s:fg_comment     .s:bg_darkcolumn  .s:fmt_none
 exe "hi! FoldColumn"    .s:fg_none        .s:bg_none        .s:fmt_none
 exe "hi! SignColumn"    .s:fg_none        .s:bg_none        .s:fmt_none
 "		Incsearch"
-exe "hi! LineNr"        .s:fg_selection   .s:bg_none        .s:fmt_none
-exe "hi! CursorLineNr"  .s:fg_selection   .s:bg_none        .s:fmt_bold
+exe "hi! LineNr"        .s:fg_line        .s:bg_none        .s:fmt_none
+exe "hi! CursorLineNr"  .s:fg_foreground  .s:bg_none        .s:fmt_none
 exe "hi! MatchParen"    .s:fg_background  .s:bg_changebg    .s:fmt_none
 exe "hi! ModeMsg"       .s:fg_green       .s:bg_none        .s:fmt_none
 exe "hi! MoreMsg"       .s:fg_green       .s:bg_none        .s:fmt_none
