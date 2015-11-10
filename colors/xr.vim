@@ -282,6 +282,11 @@ exe "hi! juliaBlKeyword"       .s:fg_cyan          .s:bg_none        .s:fmt_none
 exe "hi! rDelimiter"       .s:fg_magenta           .s:bg_none        .s:fmt_none
 exe "hi! rDollar"          .s:fg_yellow           .s:bg_none        .s:fmt_none
 
+exe "hi! Todo"          .s:fg_yellow           .s:bg_none        .s:fmt_bold
+exe "hi! Debug"         .s:fg_blue             .s:bg_none        .s:fmt_bold
+
+
+
 " }}}
 " Legal:"{{{
 " ----------------------------------------------------------------------------
