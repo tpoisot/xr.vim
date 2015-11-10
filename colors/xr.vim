@@ -53,7 +53,7 @@ let colors_name = "xr"
  
   let s:red        = "1"
   let s:lred       = "9"
-  let s:green      = "1"
+  let s:green      = "2"
   let s:lgreen     = "10"
   let s:yellow     = "3"
   let s:lyellow    = "11"
