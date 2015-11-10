@@ -272,9 +272,9 @@ hi! link diffAdded Special
 "}}}
 " Custom Syntax Highlighting: "{{{
 
-exe "hi! SignifySignAdd"       .s:fg_green         .s:bg_none        .s:fmt_none
-exe "hi! SignifySignChange"    .s:fg_blue          .s:bg_none        .s:fmt_none
-exe "hi! SignifySignDelete"    .s:fg_red           .s:bg_none        .s:fmt_none
+exe "hi! SignifySignAdd"       .s:fg_lgreen         .s:bg_none        .s:fmt_bold
+exe "hi! SignifySignChange"    .s:fg_lblue          .s:bg_none        .s:fmt_bold
+exe "hi! SignifySignDelete"    .s:fg_lred           .s:bg_none        .s:fmt_bold
 
 exe "hi! pandocBlockQuote"     .s:fg_cyan          .s:bg_none        .s:fmt_none
 exe "hi! pandocAtxHeader"      .s:fg_green         .s:bg_none        .s:fmt_bold
