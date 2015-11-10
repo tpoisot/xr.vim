@@ -164,7 +164,7 @@ exe "hi! FoldColumn"    .s:fg_none        .s:bg_none        .s:fmt_none
 exe "hi! SignColumn"    .s:fg_none        .s:bg_none        .s:fmt_none
 "		Incsearch"
 exe "hi! LineNr"        .s:fg_line        .s:bg_none        .s:fmt_none
-exe "hi! CursorLineNr"  .s:fg_foreground  .s:bg_none        .s:fmt_none
+exe "hi! CursorLineNr"  .s:fg_comment     .s:bg_none        .s:fmt_none
 exe "hi! MatchParen"    .s:fg_yellow      .s:bg_none        .s:fmt_bold
 exe "hi! ModeMsg"       .s:fg_green       .s:bg_none        .s:fmt_none
 exe "hi! MoreMsg"       .s:fg_green       .s:bg_none        .s:fmt_none
@@ -205,16 +205,16 @@ exe "hi! String"          .s:fg_green       .s:bg_none        .s:fmt_none
 "		Boolean"
 "		Float"
 
-exe "hi! Identifier"      .s:fg_magenta      .s:bg_none        .s:fmt_none
+exe "hi! Identifier"      .s:fg_magenta     .s:bg_none        .s:fmt_none
 exe "hi! Function"        .s:fg_yellow      .s:bg_none        .s:fmt_none
 
 exe "hi! Statement"       .s:fg_blue        .s:bg_none        .s:fmt_none
-"		Conditional"
-"		Repeat"
+exe "hi! Conditional"     .s:fg_magenta     .s:bg_none        .s:fmt_none
+exe "hi! Repeat"          .s:fg_lmagenta    .s:bg_none        .s:fmt_none
 "		Label"
 exe "hi! Operator"        .s:fg_cyan        .s:bg_none        .s:fmt_none
+exe "hi! Exception"       .s:fg_red         .s:bg_none        .s:fmt_bold
 "		Keyword"
-"		Exception"
 
 exe "hi! PreProc"         .s:fg_cyan        .s:bg_none        .s:fmt_none
 "		Include"
@@ -224,10 +224,10 @@ exe "hi! PreProc"         .s:fg_cyan        .s:bg_none        .s:fmt_none
 
 exe "hi! Type"            .s:fg_lyellow      .s:bg_none        .s:fmt_none
 "		StorageClass"
-exe "hi! Structure"       .s:fg_cyan        .s:bg_none        .s:fmt_none
+exe "hi! Structure"       .s:fg_lcyan        .s:bg_none        .s:fmt_none
 "		Typedef"
 
-exe "hi! Special"         .s:fg_green       .s:bg_none        .s:fmt_none
+exe "hi! Special"         .s:fg_lgreen       .s:bg_none        .s:fmt_none
 "		SpecialChar"
 "		Tag"
 "		Delimiter"
@@ -240,7 +240,8 @@ exe "hi! Ignore"          .s:fg_none        .s:bg_none        .s:fmt_none
 
 exe "hi! Error"           .s:fg_red         .s:bg_none        .s:fmt_undr
 
-exe "hi! Todo"            .s:fg_addfg       .s:bg_none        .s:fmt_none
+exe "hi! Todo"            .s:fg_lyellow     .s:bg_none        .s:fmt_bold
+exe "hi! Debug"           .s:fg_lblue       .s:bg_none        .s:fmt_bold
 
 " Quickfix window highlighting
 exe "hi! qfLineNr"        .s:fg_yellow      .s:bg_none        .s:fmt_none
