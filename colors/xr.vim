@@ -53,14 +53,19 @@ let colors_name = "xr"
  
   let s:red        = "1"
   let s:lred       = "9"
+
   let s:green      = "2"
   let s:lgreen     = "10"
+
   let s:yellow     = "3"
   let s:lyellow    = "11"
+
   let s:blue       = "4"
   let s:lblue      = "12"
+
   let s:magenta    = "5"
   let s:lmagenta   = "13"
+
   let s:cyan       = "6"
   let s:lcyan      = "14"
 
@@ -160,7 +165,7 @@ exe "hi! DiffDelete"    .s:fg_deletefg    .s:bg_none        .s:fmt_none
 exe "hi! DiffText"      .s:fg_background  .s:bg_blue        .s:fmt_none
 exe "hi! ErrorMsg"      .s:fg_background  .s:bg_red         .s:fmt_stnd
 exe "hi! VertSplit"     .s:fg_window      .s:bg_none        .s:fmt_none
-exe "hi! Folded"        .s:fg_comment     .s:bg_darkcolumn  .s:fmt_none
+exe "hi! Folded"        .s:fg_lgreen      .s:bg_darkcolumn  .s:fmt_none
 exe "hi! FoldColumn"    .s:fg_none        .s:bg_none        .s:fmt_none
 exe "hi! SignColumn"    .s:fg_none        .s:bg_none        .s:fmt_none
 "		Incsearch"
@@ -181,7 +186,7 @@ exe "hi! SpecialKey"    .s:fg_selection   .s:bg_none        .s:fmt_none
 exe "hi! SpellBad"      .s:fg_red         .s:bg_none        .s:fmt_undr
 exe "hi! SpellCap"      .s:fg_blue        .s:bg_none        .s:fmt_undr
 exe "hi! SpellLocal"    .s:fg_cyan        .s:bg_none        .s:fmt_undr
-exe "hi! SpellRare"     .s:fg_magenta      .s:bg_none        .s:fmt_undr
+exe "hi! SpellRare"     .s:fg_magenta     .s:bg_none        .s:fmt_undr
 exe "hi! StatusLine"    .s:fg_comment     .s:bg_background  .s:fmt_revr
 exe "hi! StatusLineNC"  .s:fg_window      .s:bg_comment     .s:fmt_revr
 exe "hi! TabLine"       .s:fg_foreground  .s:bg_darkcolumn  .s:fmt_revr
