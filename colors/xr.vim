@@ -303,11 +303,10 @@ exe "hi! Todo"          .s:fg_yellow           .s:bg_none        .s:fmt_bold
 exe "hi! Debug"         .s:fg_blue             .s:bg_none        .s:fmt_bold
 
 "Critic markup
-exe "hi! criticAddition"         .s:fg_lgreen             .s:bg_none        .s:fmt_bold
-exe "hi! criticDeletion"         .s:fg_lred               .s:bg_none        .s:fmt_bold
-exe "hi! criticComment"          .s:fg_lmagenta           .s:bg_none        .s:fmt_bold
-exe "hi! criticHighlight"        .s:fg_line               .s:bg_lyellow     .s:fmt_bold
-
+exe "hi! criticAddition"         .s:fg_green             .s:bg_none        .s:fmt_bold
+exe "hi! criticDeletion"         .s:fg_red               .s:bg_none        .s:fmt_bold
+exe "hi! criticComment"          .s:fg_magenta           .s:bg_none        .s:fmt_bold
+exe "hi! criticHighlight"        .s:fg_yellow            .s:bg_none        .s:fmt_bold
 
 " }}}
 " Legal:"{{{
