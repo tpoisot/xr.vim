@@ -234,6 +234,7 @@ exe "hi! Structure"       .s:fg_lcyan        .s:bg_none        .s:fmt_none
 "		Typedef"
 
 exe "hi! Special"         .s:fg_lgreen       .s:bg_none        .s:fmt_none
+exe "hi! Delimiter"       .s:fg_lred         .s:bg_none        .s:fmt_none
 "		SpecialChar"
 "		Tag"
 "		Delimiter"
@@ -282,6 +283,11 @@ hi! link diffAdded Special
 exe "hi! SignifySignAdd"       .s:fg_lgreen         .s:bg_none        .s:fmt_bold
 exe "hi! SignifySignChange"    .s:fg_lblue          .s:bg_none        .s:fmt_bold
 exe "hi! SignifySignDelete"    .s:fg_lred           .s:bg_none        .s:fmt_bold
+
+exe "hi! GitGutterAdd"            .s:fg_lgreen         .s:bg_none        .s:fmt_bold
+exe "hi! GitGutterChange"         .s:fg_lblue          .s:bg_none        .s:fmt_bold
+exe "hi! GitGutterDelete"         .s:fg_lred           .s:bg_none        .s:fmt_bold
+exe "hi! GitGutterChangeDelete"   .s:fg_lmagenta       .s:bg_none        .s:fmt_bold
 
 exe "hi! pandocBlockQuote"     .s:fg_cyan          .s:bg_none        .s:fmt_none
 exe "hi! pandocAtxHeader"      .s:fg_green         .s:bg_none        .s:fmt_bold
