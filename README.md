@@ -1,4 +1,4 @@
-# Jellybeans
+# xr.vim
 
-A fork of the `jellybeans` theme for `vim`, with additional support for
-languages I use (like `markdown`)
+A colorscheme for `vim`, using the colors from the terminal. With some
+additional tweaks for makefiles, pandoc, git, ...
