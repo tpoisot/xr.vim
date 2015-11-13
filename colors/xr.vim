@@ -280,9 +280,9 @@ hi! link diffAdded Special
 "}}}
 " Custom Syntax Highlighting: "{{{
 
-exe "hi! SignifySignAdd"       .s:fg_lgreen         .s:bg_none        .s:fmt_bold
-exe "hi! SignifySignChange"    .s:fg_lblue          .s:bg_none        .s:fmt_bold
-exe "hi! SignifySignDelete"    .s:fg_lred           .s:bg_none        .s:fmt_bold
+exe "hi! SignifySignAdd"       .s:fg_green         .s:bg_none        .s:fmt_none
+exe "hi! SignifySignChange"    .s:fg_blue          .s:bg_none        .s:fmt_none
+exe "hi! SignifySignDelete"    .s:fg_red           .s:bg_none        .s:fmt_none
 
 exe "hi! GitGutterAdd"            .s:fg_lgreen         .s:bg_none        .s:fmt_bold
 exe "hi! GitGutterChange"         .s:fg_lblue          .s:bg_none        .s:fmt_bold
@@ -294,10 +294,22 @@ exe "hi! pandocAtxHeader"      .s:fg_green         .s:bg_none        .s:fmt_bold
 
 exe "hi! Conceal"              .s:fg_yellow        .s:bg_none        .s:fmt_none
 
-exe "hi! pandocReferenceLabel"                 .s:fg_lyellow       .s:bg_none        .s:fmt_none
-exe "hi! pandocReferenceDefinitionLabel"       .s:fg_lyellow       .s:bg_none        .s:fmt_none
+" pandoc "{{{
+exe "hi! pandocReferenceLabel"                 .s:fg_lyellow      .s:bg_none        .s:fmt_none
+exe "hi! pandocReferenceDefinitionLabel"       .s:fg_lyellow      .s:bg_none        .s:fmt_none
 exe "hi! pandocReferenceURL"                   .s:fg_comment      .s:bg_none        .s:fmt_none
 exe "hi! pandocReferenceDefinitionAddress"     .s:fg_comment      .s:bg_none        .s:fmt_none
+
+exe "hi! pandocAtxHeader"                      .s:fg_blue         .s:bg_none        .s:fmt_bold
+
+exe "hi! pandocCiteKey"                        .s:fg_green        .s:bg_none        .s:fmt_none
+exe "hi! pandocCiteAnchor"                     .s:fg_blue         .s:bg_none        .s:fmt_none
+
+exe "hi! criticAddition"                       .s:fg_green        .s:bg_none        .s:fmt_bold
+exe "hi! criticDeletion"                       .s:fg_red          .s:bg_none        .s:fmt_bold
+exe "hi! criticComment"                        .s:fg_magenta      .s:bg_none        .s:fmt_bold
+exe "hi! criticHighlight"                      .s:fg_yellow       .s:bg_none        .s:fmt_bold
+"}}}
 
 exe "hi! juliaRepeat"          .s:fg_yellow        .s:bg_none        .s:fmt_none
 exe "hi! juliaBlKeyword"       .s:fg_cyan          .s:bg_none        .s:fmt_none
@@ -308,11 +320,10 @@ exe "hi! rDollar"          .s:fg_yellow           .s:bg_none        .s:fmt_none
 exe "hi! Todo"          .s:fg_yellow           .s:bg_none        .s:fmt_bold
 exe "hi! Debug"         .s:fg_blue             .s:bg_none        .s:fmt_bold
 
-"Critic markup
-exe "hi! criticAddition"         .s:fg_green             .s:bg_none        .s:fmt_bold
-exe "hi! criticDeletion"         .s:fg_red               .s:bg_none        .s:fmt_bold
-exe "hi! criticComment"          .s:fg_magenta           .s:bg_none        .s:fmt_bold
-exe "hi! criticHighlight"        .s:fg_yellow            .s:bg_none        .s:fmt_bold
+" Makefile "{{{
+exe "hi! makeCommands"         .s:fg_none             .s:bg_none        .s:fmt_none
+exe "hi! makeTarget"           .s:fg_blue             .s:bg_none        .s:fmt_bold
+" }}}
 
 " }}}
 " Legal:"{{{
