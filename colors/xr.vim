@@ -206,9 +206,9 @@ exe "hi! Comment"         .s:fg_comment     .s:bg_none        .s:fmt_none
 
 exe "hi! Constant"        .s:fg_red         .s:bg_none        .s:fmt_none
 exe "hi! String"          .s:fg_green       .s:bg_none        .s:fmt_none
+exe "hi! Boolean"         .s:fg_blue        .s:bg_none        .s:fmt_bold
 "		Character"
 "		Number"
-"		Boolean"
 "		Float"
 
 exe "hi! Identifier"      .s:fg_magenta     .s:bg_none        .s:fmt_none
@@ -233,11 +233,11 @@ exe "hi! Type"            .s:fg_lyellow      .s:bg_none        .s:fmt_none
 exe "hi! Structure"       .s:fg_lcyan        .s:bg_none        .s:fmt_none
 "		Typedef"
 
-exe "hi! Special"         .s:fg_lgreen       .s:bg_none        .s:fmt_none
+exe "hi! Special"         .s:fg_lblue        .s:bg_none        .s:fmt_none
 exe "hi! Delimiter"       .s:fg_lred         .s:bg_none        .s:fmt_none
+exe "hi! SpecialChar"     .s:fg_magenta      .s:bg_none        .s:fmt_none
 "		SpecialChar"
 "		Tag"
-"		Delimiter"
 "		SpecialComment"
 "		Debug"
 "
@@ -314,8 +314,10 @@ exe "hi! criticHighlight"                      .s:fg_yellow       .s:bg_none    
 exe "hi! juliaRepeat"          .s:fg_yellow        .s:bg_none        .s:fmt_none
 exe "hi! juliaBlKeyword"       .s:fg_cyan          .s:bg_none        .s:fmt_none
 
+" R "{{{
 exe "hi! rDelimiter"       .s:fg_magenta           .s:bg_none        .s:fmt_none
 exe "hi! rDollar"          .s:fg_yellow           .s:bg_none        .s:fmt_none
+" }}}
 
 exe "hi! Todo"          .s:fg_yellow           .s:bg_none        .s:fmt_bold
 exe "hi! Debug"         .s:fg_blue             .s:bg_none        .s:fmt_bold
