@@ -46,10 +46,17 @@ let colors_name = "xr"
   let s:changebg   = "0"
   let s:changefg   = "4"
 
-  let s:foreground = "15"   " White
-  let s:selection  = "0"    " DarkGrey
-  let s:line       = "8"    " Black
-  let s:comment    = "7"    " LightGrey
+  if &background == "dark"
+   let s:foreground = "15"   " White
+   let s:selection  = "0"    " DarkGrey
+   let s:line       = "8"    " Black
+   let s:comment    = "7"    " LightGrey
+  else
+   let s:foreground = "0"   " White
+   let s:selection  = "15"    " DarkGrey
+   let s:line       = "7"    " Black
+   let s:comment    = "8"    " LightGrey
+  endif
  
   let s:red        = "1"
   let s:lred       = "9"
@@ -165,7 +172,7 @@ exe "hi! DiffDelete"    .s:fg_deletefg    .s:bg_none        .s:fmt_none
 exe "hi! DiffText"      .s:fg_background  .s:bg_blue        .s:fmt_none
 exe "hi! ErrorMsg"      .s:fg_background  .s:bg_red         .s:fmt_stnd
 exe "hi! VertSplit"     .s:fg_window      .s:bg_none        .s:fmt_none
-exe "hi! Folded"        .s:fg_lgreen      .s:bg_darkcolumn  .s:fmt_none
+exe "hi! Folded"        .s:fg_lgreen      .s:bg_comment     .s:fmt_none
 exe "hi! FoldColumn"    .s:fg_none        .s:bg_none        .s:fmt_none
 exe "hi! SignColumn"    .s:fg_none        .s:bg_none        .s:fmt_none
 "		Incsearch"
