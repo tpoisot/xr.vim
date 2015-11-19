@@ -312,6 +312,9 @@ exe "hi! pandocAtxHeader"                      .s:fg_blue         .s:bg_none    
 exe "hi! pandocCiteKey"                        .s:fg_green        .s:bg_none        .s:fmt_none
 exe "hi! pandocCiteAnchor"                     .s:fg_blue         .s:bg_none        .s:fmt_none
 
+exe "hi! pandocStrong"                         .s:fg_none         .s:bg_none        .s:fmt_bold
+exe "hi! pandocEmphasis"                       .s:fg_none         .s:bg_none        .s:fmt_ital
+
 exe "hi! criticAddition"                       .s:fg_green        .s:bg_none        .s:fmt_bold
 exe "hi! criticDeletion"                       .s:fg_red          .s:bg_none        .s:fmt_bold
 exe "hi! criticComment"                        .s:fg_magenta      .s:bg_none        .s:fmt_bold
