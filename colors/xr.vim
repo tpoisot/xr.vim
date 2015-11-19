@@ -188,12 +188,12 @@ exe "hi! PmenuSel"      .s:fg_foreground  .s:bg_selection   .s:fmt_revr
 "		PmenuSbar"
 "		PmenuThumb"
 exe "hi! Question"      .s:fg_green       .s:bg_none        .s:fmt_none
-exe "hi! Search"        .s:fg_yellow      .s:bg_blue        .s:fmt_bold
+exe "hi! Search"        .s:fg_yellow      .s:bg_red         .s:fmt_none
 exe "hi! SpecialKey"    .s:fg_selection   .s:bg_none        .s:fmt_none
-exe "hi! SpellBad"      .s:fg_red         .s:bg_none        .s:fmt_undr
-exe "hi! SpellCap"      .s:fg_blue        .s:bg_none        .s:fmt_undr
-exe "hi! SpellLocal"    .s:fg_cyan        .s:bg_none        .s:fmt_undr
-exe "hi! SpellRare"     .s:fg_magenta     .s:bg_none        .s:fmt_undr
+exe "hi! SpellBad"      .s:fg_red         .s:bg_none        .s:fmt_curl
+exe "hi! SpellCap"      .s:fg_blue        .s:bg_none        .s:fmt_curl
+exe "hi! SpellLocal"    .s:fg_cyan        .s:bg_none        .s:fmt_curl
+exe "hi! SpellRare"     .s:fg_magenta     .s:bg_none        .s:fmt_curl
 exe "hi! StatusLine"    .s:fg_comment     .s:bg_background  .s:fmt_revr
 exe "hi! StatusLineNC"  .s:fg_window      .s:bg_comment     .s:fmt_revr
 exe "hi! TabLine"       .s:fg_foreground  .s:bg_darkcolumn  .s:fmt_revr
