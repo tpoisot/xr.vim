@@ -332,6 +332,12 @@ exe "hi! rDollar"          .s:fg_yellow           .s:bg_none        .s:fmt_none
 exe "hi! Todo"          .s:fg_yellow           .s:bg_none        .s:fmt_bold
 exe "hi! Debug"         .s:fg_blue             .s:bg_none        .s:fmt_bold
 
+" mailcap "{{{
+exe "hi! mailcapTypeField"         .s:fg_blue             .s:bg_none        .s:fmt_bold
+exe "hi! mailcapSpecial"           .s:fg_magenta          .s:bg_none        .s:fmt_bold
+exe "hi! mailcapDelimiter"         .s:fg_comment          .s:bg_none        .s:fmt_none
+" }}}
+
 " Makefile "{{{
 exe "hi! makeCommands"         .s:fg_none             .s:bg_none        .s:fmt_none
 exe "hi! makeTarget"           .s:fg_blue             .s:bg_none        .s:fmt_bold
