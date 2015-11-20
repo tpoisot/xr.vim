@@ -52,8 +52,8 @@ let colors_name = "xr"
    let s:line       = "8"    " Black
    let s:comment    = "7"    " LightGrey
   else
-   let s:foreground = "0"   " White
-   let s:selection  = "15"    " DarkGrey
+   let s:foreground = "0"    " White
+   let s:selection  = "15"   " DarkGrey
    let s:line       = "7"    " Black
    let s:comment    = "8"    " LightGrey
   endif
