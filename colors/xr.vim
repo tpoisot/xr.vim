@@ -332,6 +332,9 @@ exe "hi! rDollar"          .s:fg_yellow           .s:bg_none        .s:fmt_none
 exe "hi! Todo"          .s:fg_yellow           .s:bg_none        .s:fmt_bold
 exe "hi! Debug"         .s:fg_blue             .s:bg_none        .s:fmt_bold
 
+exe "hi! CSVColumnEven" .s:fg_blue             .s:bg_selection   .s:fmt_none
+exe "hi! CSVColumnOdd"  .s:fg_magenta          .s:bg_selection   .s:fmt_none
+
 " mailcap "{{{
 exe "hi! mailcapTypeField"         .s:fg_blue             .s:bg_none        .s:fmt_bold
 exe "hi! mailcapSpecial"           .s:fg_magenta          .s:bg_none        .s:fmt_bold
