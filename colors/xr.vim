@@ -114,9 +114,9 @@ exe "let s:bg_lmagenta   = ' ctermfg=".s:lmagenta  ."'"
 exe "let s:bg_window     = ' ctermbg=".s:window    ."'"
 exe "let s:bg_darkcolumn = ' ctermbg=".s:darkcolumn."'"
 exe "let s:bg_addbg      = ' ctermbg=".s:addbg     ."'"
-exe "let s:bg_addfg      = ' ctermbg=".s:addfg     ."'"
-exe "let s:bg_changebg   = ' ctermbg=".s:changebg  ."'"
-exe "let s:bg_changefg   = ' ctermbg=".s:changefg  ."'"
+exe "let s:bg_addfg      = ' ctermbg=".s:selection ."'"
+exe "let s:bg_changebg   = ' ctermbg=".s:selection ."'"
+exe "let s:bg_changefg   = ' ctermbg=".s:blue      ."'"
 
 exe "let s:fg_none       = ' ctermfg=".s:none      ."'"
 exe "let s:fg_foreground = ' ctermfg=".s:foreground."'"
@@ -166,9 +166,9 @@ exe "hi! ColorColumn"   .s:fg_none        .s:bg_line        .s:fmt_none
 exe "hi! CursorColumn"  .s:fg_none        .s:bg_line        .s:fmt_none
 exe "hi! CursorLine"    .s:fg_none        .s:bg_none        .s:fmt_none
 exe "hi! Directory"     .s:fg_blue        .s:bg_none        .s:fmt_none
-exe "hi! DiffAdd"       .s:fg_addfg       .s:bg_addbg       .s:fmt_none
-exe "hi! DiffChange"    .s:fg_changefg    .s:bg_changebg    .s:fmt_none
-exe "hi! DiffDelete"    .s:fg_deletefg    .s:bg_none        .s:fmt_none
+exe "hi! DiffAdd"       .s:fg_green       .s:bg_line        .s:fmt_none
+exe "hi! DiffChange"    .s:fg_blue        .s:bg_line        .s:fmt_none
+exe "hi! DiffDelete"    .s:fg_red         .s:bg_line        .s:fmt_none
 exe "hi! DiffText"      .s:fg_background  .s:bg_blue        .s:fmt_none
 exe "hi! ErrorMsg"      .s:fg_background  .s:bg_red         .s:fmt_stnd
 exe "hi! VertSplit"     .s:fg_window      .s:bg_none        .s:fmt_none
