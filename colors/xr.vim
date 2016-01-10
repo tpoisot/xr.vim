@@ -170,7 +170,7 @@ exe "hi! DiffAdd"       .s:fg_green       .s:bg_line        .s:fmt_none
 exe "hi! DiffChange"    .s:fg_blue        .s:bg_line        .s:fmt_none
 exe "hi! DiffDelete"    .s:fg_red         .s:bg_line        .s:fmt_none
 exe "hi! DiffText"      .s:fg_background  .s:bg_blue        .s:fmt_none
-exe "hi! ErrorMsg"      .s:fg_background  .s:bg_red         .s:fmt_none
+exe "hi! ErrorMsg"      .s:fg_red         .s:bg_none        .s:fmt_bold
 exe "hi! VertSplit"     .s:fg_window      .s:bg_none        .s:fmt_none
 exe "hi! Folded"        .s:fg_lgreen      .s:bg_selection   .s:fmt_ital
 exe "hi! FoldColumn"    .s:fg_none        .s:bg_none        .s:fmt_none
@@ -179,8 +179,8 @@ exe "hi! SignColumn"    .s:fg_none        .s:bg_none        .s:fmt_none
 exe "hi! LineNr"        .s:fg_line        .s:bg_none        .s:fmt_none
 exe "hi! CursorLineNr"  .s:fg_comment     .s:bg_none        .s:fmt_none
 exe "hi! MatchParen"    .s:fg_yellow      .s:bg_none        .s:fmt_bold
-exe "hi! ModeMsg"       .s:fg_background  .s:bg_green       .s:fmt_none
-exe "hi! MoreMsg"       .s:fg_green       .s:bg_none        .s:fmt_none
+exe "hi! ModeMsg"       .s:fg_green       .s:bg_none        .s:fmt_bold
+exe "hi! MoreMsg"       .s:fg_blue        .s:bg_none        .s:fmt_bold
 exe "hi! NonText"       .s:fg_selection   .s:bg_none        .s:fmt_none
 exe "hi! Normal"        .s:fg_none        .s:bg_none        .s:fmt_none
 exe "hi! Pmenu"         .s:fg_foreground  .s:bg_selection   .s:fmt_none
@@ -194,7 +194,7 @@ exe "hi! SpellBad"      .s:fg_red         .s:bg_none        .s:fmt_curl
 exe "hi! SpellCap"      .s:fg_blue        .s:bg_none        .s:fmt_curl
 exe "hi! SpellLocal"    .s:fg_cyan        .s:bg_none        .s:fmt_curl
 exe "hi! SpellRare"     .s:fg_magenta     .s:bg_none        .s:fmt_curl
-exe "hi! StatusLine"    .s:fg_background  .s:bg_cyan        .s:fmt_revr
+exe "hi! StatusLine"    .s:fg_background  .s:bg_lyellow     .s:fmt_revr
 exe "hi! StatusLineNC"  .s:fg_comment     .s:bg_line        .s:fmt_none
 exe "hi! TabLine"       .s:fg_foreground  .s:bg_darkcolumn  .s:fmt_revr
 "		TabLineFill"
