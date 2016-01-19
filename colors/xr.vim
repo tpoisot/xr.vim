@@ -178,7 +178,7 @@ exe "hi! FoldColumn"    .s:fg_none        .s:bg_none        .s:fmt_none
 exe "hi! SignColumn"    .s:fg_none        .s:bg_none        .s:fmt_none
 "		Incsearch"
 exe "hi! LineNr"        .s:fg_line        .s:bg_none        .s:fmt_none
-exe "hi! CursorLineNr"  .s:fg_comment     .s:bg_selection   .s:fmt_none
+exe "hi! CursorLineNr"  .s:fg_comment     .s:bg_selection   .s:fmt_bold
 exe "hi! MatchParen"    .s:fg_yellow      .s:bg_none        .s:fmt_bold
 exe "hi! ModeMsg"       .s:fg_green       .s:bg_none        .s:fmt_bold
 exe "hi! MoreMsg"       .s:fg_blue        .s:bg_none        .s:fmt_bold
