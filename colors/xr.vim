@@ -186,7 +186,7 @@ exe "hi! ErrorMsg"      .s:fg_red         .s:bg_none        .s:fmt_bold
 exe "hi! NonText"       .s:fg_selection   .s:bg_none        .s:fmt_none
 exe "hi! Normal"        .s:fg_none        .s:bg_none        .s:fmt_none
 exe "hi! Pmenu"         .s:fg_foreground  .s:bg_selection   .s:fmt_none
-exe "hi! PmenuSel"      .s:fg_yellow      .s:bg_selection   .s:fmt_revr
+exe "hi! PmenuSel"      .s:fg_magenta     .s:bg_selection   .s:fmt_revr
 "		PmenuSbar"
 "		PmenuThumb"
 exe "hi! Question"      .s:fg_green       .s:bg_none        .s:fmt_none
