@@ -196,8 +196,8 @@ exe "hi! SpellBad"      .s:fg_red         .s:bg_none        .s:fmt_curl
 exe "hi! SpellCap"      .s:fg_blue        .s:bg_none        .s:fmt_curl
 exe "hi! SpellLocal"    .s:fg_cyan        .s:bg_none        .s:fmt_curl
 exe "hi! SpellRare"     .s:fg_magenta     .s:bg_none        .s:fmt_curl
-exe "hi! StatusLine"    .s:fg_background  .s:bg_line        .s:fmt_none
-exe "hi! StatusLineNC"  .s:fg_selection   .s:bg_line        .s:fmt_none
+exe "hi! StatusLine"    .s:fg_yellow      .s:bg_comment     .s:fmt_none
+exe "hi! StatusLineNC"  .s:fg_selection   .s:bg_comment     .s:fmt_none
 exe "hi! TabLine"       .s:fg_foreground  .s:bg_darkcolumn  .s:fmt_revr
 "		TabLineFill"
 "		TabLineSel"
