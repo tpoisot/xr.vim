@@ -95,7 +95,7 @@ let s:i      = ",italic"
 "}}}
 " Highlighting Primitives:"{{{
 " ----------------------------------------------------------------------------
-exe "let s:bg_none       = ' ctermbg=".s:background."'"
+exe "let s:bg_none       = ' ctermbg=".s:none      ."'"
 exe "let s:bg_foreground = ' ctermbg=".s:foreground."'"
 exe "let s:bg_background = ' ctermbg=".s:background."'"
 exe "let s:bg_selection  = ' ctermbg=".s:selection ."'"
@@ -120,7 +120,7 @@ exe "let s:bg_addfg      = ' ctermbg=".s:selection ."'"
 exe "let s:bg_changebg   = ' ctermbg=".s:selection ."'"
 exe "let s:bg_changefg   = ' ctermbg=".s:blue      ."'"
 
-exe "let s:fg_none       = ' ctermfg=".s:foreground."'"
+exe "let s:fg_none       = ' ctermfg=".s:none      ."'"
 exe "let s:fg_foreground = ' ctermfg=".s:foreground."'"
 exe "let s:fg_background = ' ctermfg=".s:background."'"
 exe "let s:fg_selection  = ' ctermfg=".s:selection ."'"
@@ -197,7 +197,7 @@ exe "hi! SpellCap"      .s:fg_blue        .s:bg_none        .s:fmt_curl
 exe "hi! SpellLocal"    .s:fg_cyan        .s:bg_none        .s:fmt_curl
 exe "hi! SpellRare"     .s:fg_magenta     .s:bg_none        .s:fmt_curl
 exe "hi! StatusLine"    .s:fg_foreground  .s:bg_selection   .s:fmt_none
-exe "hi! StatusLineNC"  .s:fg_line        .s:bg_selection   .s:fmt_none
+exe "hi! StatusLineNC"  .s:fg_background  .s:bg_selection   .s:fmt_none
 exe "hi! TabLine"       .s:fg_foreground  .s:bg_darkcolumn  .s:fmt_revr
 "		TabLineFill"
 "		TabLineSel"
