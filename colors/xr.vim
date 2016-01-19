@@ -95,7 +95,7 @@ let s:i      = ",italic"
 "}}}
 " Highlighting Primitives:"{{{
 " ----------------------------------------------------------------------------
-exe "let s:bg_none       = ' ctermbg=".s:none      ."'"
+exe "let s:bg_none       = ' ctermbg=".s:background."'"
 exe "let s:bg_foreground = ' ctermbg=".s:foreground."'"
 exe "let s:bg_background = ' ctermbg=".s:background."'"
 exe "let s:bg_selection  = ' ctermbg=".s:selection ."'"
@@ -120,7 +120,7 @@ exe "let s:bg_addfg      = ' ctermbg=".s:selection ."'"
 exe "let s:bg_changebg   = ' ctermbg=".s:selection ."'"
 exe "let s:bg_changefg   = ' ctermbg=".s:blue      ."'"
 
-exe "let s:fg_none       = ' ctermfg=".s:none      ."'"
+exe "let s:fg_none       = ' ctermfg=".s:foreground."'"
 exe "let s:fg_foreground = ' ctermfg=".s:foreground."'"
 exe "let s:fg_background = ' ctermfg=".s:background."'"
 exe "let s:fg_selection  = ' ctermfg=".s:selection ."'"
