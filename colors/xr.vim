@@ -339,7 +339,8 @@ exe "hi! CSVColumnHeaderEven" .s:fg_blue             .s:bg_selection   .s:fmt_bo
 exe "hi! CSVColumnOdd"        .s:fg_magenta          .s:bg_selection   .s:fmt_none
 exe "hi! CSVColumnHeaderOdd"  .s:fg_magenta          .s:bg_selection   .s:fmt_bold
 
-exe "hi! cSpecial"    .s:fg_lyellow .s:bg_none .s:fmt_none
+exe "hi! cSpecial"    .s:fg_lyellow   .s:bg_none .s:fmt_none
+exe "hi! cFormat"    .s:fg_magenta   .s:bg_none .s:fmt_none
 
 " mailcap "{{{
 exe "hi! mailcapTypeField"         .s:fg_blue             .s:bg_none        .s:fmt_bold
