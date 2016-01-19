@@ -178,7 +178,7 @@ exe "hi! FoldColumn"    .s:fg_none        .s:bg_none        .s:fmt_none
 exe "hi! SignColumn"    .s:fg_none        .s:bg_none        .s:fmt_none
 "		Incsearch"
 exe "hi! LineNr"        .s:fg_line        .s:bg_none        .s:fmt_none
-exe "hi! CursorLineNr"  .s:fg_comment     .s:bg_selection   .s:fmt_bold
+exe "hi! CursorLineNr"  .s:fg_line        .s:bg_selection   .s:fmt_bold
 exe "hi! MatchParen"    .s:fg_yellow      .s:bg_none        .s:fmt_bold
 exe "hi! ModeMsg"       .s:fg_green       .s:bg_none        .s:fmt_bold
 exe "hi! MoreMsg"       .s:fg_blue        .s:bg_none        .s:fmt_bold
@@ -196,8 +196,8 @@ exe "hi! SpellBad"      .s:fg_red         .s:bg_none        .s:fmt_curl
 exe "hi! SpellCap"      .s:fg_blue        .s:bg_none        .s:fmt_curl
 exe "hi! SpellLocal"    .s:fg_cyan        .s:bg_none        .s:fmt_curl
 exe "hi! SpellRare"     .s:fg_magenta     .s:bg_none        .s:fmt_curl
-exe "hi! StatusLine"    .s:fg_yellow      .s:bg_comment     .s:fmt_none
-exe "hi! StatusLineNC"  .s:fg_selection   .s:bg_comment     .s:fmt_none
+exe "hi! StatusLine"    .s:fg_comment     .s:bg_line        .s:fmt_bold
+exe "hi! StatusLineNC"  .s:fg_comment     .s:bg_line        .s:fmt_none
 exe "hi! TabLine"       .s:fg_foreground  .s:bg_darkcolumn  .s:fmt_revr
 "		TabLineFill"
 "		TabLineSel"
@@ -211,7 +211,7 @@ exe "hi! WarningMsg"    .s:fg_red         .s:bg_none        .s:fmt_none
 "}}}
 " Generic Syntax Highlighting: (see :help group-name)"{{{
 " ----------------------------------------------------------------------------
-exe "hi! Comment"         .s:fg_comment     .s:bg_none        .s:fmt_none
+exe "hi! Comment"         .s:fg_comment     .s:bg_none        .s:fmt_ital
 
 exe "hi! Constant"        .s:fg_red         .s:bg_none        .s:fmt_none
 exe "hi! String"          .s:fg_green       .s:bg_none        .s:fmt_none
