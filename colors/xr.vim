@@ -328,7 +328,7 @@ exe "hi! juliaBlKeyword"       .s:fg_cyan          .s:bg_none        .s:fmt_none
 
 " R "{{{
 exe "hi! rDelimiter"       .s:fg_magenta           .s:bg_none        .s:fmt_none
-exe "hi! rDollar"          .s:fg_yellow           .s:bg_none        .s:fmt_none
+exe "hi! rDollar"          .s:fg_cyan              .s:bg_none        .s:fmt_none
 " }}}
 
 exe "hi! Todo"          .s:fg_yellow           .s:bg_none        .s:fmt_bold
