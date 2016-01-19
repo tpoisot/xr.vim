@@ -225,7 +225,7 @@ exe "hi! Function"        .s:fg_yellow      .s:bg_none        .s:fmt_none
 
 exe "hi! Statement"       .s:fg_blue        .s:bg_none        .s:fmt_none
 exe "hi! Conditional"     .s:fg_magenta     .s:bg_none        .s:fmt_none
-exe "hi! Repeat"          .s:fg_lmagenta    .s:bg_none        .s:fmt_none
+exe "hi! Repeat"          .s:fg_magenta     .s:bg_none        .s:fmt_none
 "		Label"
 exe "hi! Operator"        .s:fg_cyan        .s:bg_none        .s:fmt_none
 exe "hi! Exception"       .s:fg_red         .s:bg_none        .s:fmt_bold
@@ -237,13 +237,13 @@ exe "hi! PreProc"         .s:fg_cyan        .s:bg_none        .s:fmt_none
 "		Macro"
 "		PreCondit"
 
-exe "hi! Type"            .s:fg_lyellow      .s:bg_none        .s:fmt_none
+exe "hi! Type"            .s:fg_yellow      .s:bg_none        .s:fmt_none
 "		StorageClass"
-exe "hi! Structure"       .s:fg_lcyan        .s:bg_none        .s:fmt_none
+exe "hi! Structure"       .s:fg_cyan        .s:bg_none        .s:fmt_none
 "		Typedef"
 
-exe "hi! Special"         .s:fg_lblue        .s:bg_none        .s:fmt_none
-exe "hi! Delimiter"       .s:fg_lred         .s:bg_none        .s:fmt_none
+exe "hi! Special"         .s:fg_blue        .s:bg_none        .s:fmt_none
+exe "hi! Delimiter"       .s:fg_red         .s:bg_none        .s:fmt_none
 exe "hi! SpecialChar"     .s:fg_magenta      .s:bg_none        .s:fmt_none
 "		SpecialChar"
 "		Tag"
