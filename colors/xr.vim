@@ -213,21 +213,21 @@ exe "hi! WarningMsg"    .s:fg_red         .s:bg_none        .s:fmt_none
 " ----------------------------------------------------------------------------
 exe "hi! Comment"         .s:fg_comment     .s:bg_none        .s:fmt_ital
 
-exe "hi! Constant"        .s:fg_red         .s:bg_none        .s:fmt_none
-exe "hi! String"          .s:fg_green       .s:bg_none        .s:fmt_none
-exe "hi! Boolean"         .s:fg_blue        .s:bg_none        .s:fmt_bold
+exe "hi! Constant"        .s:fg_green       .s:bg_none        .s:fmt_none
+exe "hi! String"          .s:fg_magenta     .s:bg_none        .s:fmt_none
+exe "hi! Boolean"         .s:fg_cyan        .s:bg_none        .s:fmt_bold
 "		Character"
 "		Number"
 "		Float"
 
-exe "hi! Identifier"      .s:fg_magenta     .s:bg_none        .s:fmt_none
-exe "hi! Function"        .s:fg_yellow      .s:bg_none        .s:fmt_none
+exe "hi! Identifier"      .s:fg_magenta      .s:bg_none        .s:fmt_none
+exe "hi! Function"        .s:fg_yellow       .s:bg_none        .s:fmt_none
 
-exe "hi! Statement"       .s:fg_blue        .s:bg_none        .s:fmt_none
-exe "hi! Conditional"     .s:fg_magenta     .s:bg_none        .s:fmt_none
-exe "hi! Repeat"          .s:fg_magenta     .s:bg_none        .s:fmt_none
+exe "hi! Statement"       .s:fg_lblue        .s:bg_none        .s:fmt_none
+exe "hi! Conditional"     .s:fg_blue         .s:bg_none        .s:fmt_none
+exe "hi! Repeat"          .s:fg_blue         .s:bg_none        .s:fmt_none
 "		Label"
-exe "hi! Operator"        .s:fg_cyan        .s:bg_none        .s:fmt_none
+exe "hi! Operator"        .s:fg_magenta        .s:bg_none        .s:fmt_none
 exe "hi! Exception"       .s:fg_red         .s:bg_none        .s:fmt_bold
 "		Keyword"
 
@@ -244,7 +244,7 @@ exe "hi! Structure"       .s:fg_cyan        .s:bg_none        .s:fmt_none
 
 exe "hi! Special"         .s:fg_blue        .s:bg_none        .s:fmt_none
 exe "hi! Delimiter"       .s:fg_red         .s:bg_none        .s:fmt_none
-exe "hi! SpecialChar"     .s:fg_magenta     .s:bg_none        .s:fmt_none
+exe "hi! SpecialChar"     .s:fg_green       .s:bg_none        .s:fmt_bold
 "		SpecialChar"
 "		Tag"
 "		SpecialComment"
