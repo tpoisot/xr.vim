@@ -213,9 +213,9 @@ exe "hi! WarningMsg"    .s:fg_red         .s:bg_none        .s:fmt_none
 " ----------------------------------------------------------------------------
 exe "hi! Comment"         .s:fg_comment     .s:bg_none        .s:fmt_ital
 
-exe "hi! Constant"        .s:fg_green       .s:bg_none        .s:fmt_none
-exe "hi! String"          .s:fg_magenta     .s:bg_none        .s:fmt_none
-exe "hi! Boolean"         .s:fg_cyan        .s:bg_none        .s:fmt_bold
+exe "hi! Constant"        .s:fg_red         .s:bg_none        .s:fmt_none
+exe "hi! String"          .s:fg_green       .s:bg_none        .s:fmt_none
+exe "hi! Boolean"         .s:fg_magenta     .s:bg_none        .s:fmt_bold
 "		Character"
 "		Number"
 "		Float"
