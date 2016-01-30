@@ -221,21 +221,21 @@ exe "hi! Boolean"         .s:fg_magenta     .s:bg_none        .s:fmt_bold
 "		Float"
 
 exe "hi! Identifier"      .s:fg_magenta      .s:bg_none        .s:fmt_none
-exe "hi! Function"        .s:fg_magenta       .s:bg_none        .s:fmt_none
+exe "hi! Function"        .s:fg_lmagenta       .s:bg_none        .s:fmt_none
 
-exe "hi! Statement"       .s:fg_blue        .s:bg_none        .s:fmt_none
+exe "hi! Statement"       .s:fg_lblue        .s:bg_none        .s:fmt_none
 
-exe "hi! Conditional"     .s:fg_lmagenta         .s:bg_none        .s:fmt_none
-exe "hi! Repeat"          .s:fg_lblue         .s:bg_none        .s:fmt_none
+exe "hi! Conditional"     .s:fg_magenta         .s:bg_none        .s:fmt_none
+exe "hi! Repeat"          .s:fg_blue         .s:bg_none        .s:fmt_none
 "		Label"
-exe "hi! Operator"        .s:fg_magenta        .s:bg_none        .s:fmt_none
-exe "hi! Exception"       .s:fg_red         .s:bg_none        .s:fmt_bold
+exe "hi! Operator"        .s:fg_lred        .s:bg_none        .s:fmt_none
+exe "hi! Exception"       .s:fg_red         .s:bg_none        .s:fmt_none
 "		Keyword"
 
-exe "hi! PreProc"         .s:fg_cyan        .s:bg_none        .s:fmt_none
-"		Include"
+exe "hi! PreProc"         .s:fg_cyan          .s:bg_none        .s:fmt_none
+exe "hi! Include"         .s:fg_magenta        .s:bg_none        .s:fmt_none
+exe "hi! Macro"           .s:fg_red            .s:bg_none        .s:fmt_none
 "		Define"
-"		Macro"
 "		PreCondit"
 
 exe "hi! Type"            .s:fg_yellow      .s:bg_none        .s:fmt_none
@@ -243,9 +243,8 @@ exe "hi! Type"            .s:fg_yellow      .s:bg_none        .s:fmt_none
 exe "hi! Structure"       .s:fg_cyan        .s:bg_none        .s:fmt_none
 "		Typedef"
 
-exe "hi! Special"         .s:fg_blue        .s:bg_none        .s:fmt_none
+exe "hi! Special"         .s:fg_yellow        .s:bg_none        .s:fmt_bold
 exe "hi! Delimiter"       .s:fg_red         .s:bg_none        .s:fmt_none
-exe "hi! SpecialChar"     .s:fg_green       .s:bg_none        .s:fmt_bold
 "		SpecialChar"
 "		Tag"
 "		SpecialComment"
@@ -340,8 +339,7 @@ exe "hi! CSVColumnHeaderEven" .s:fg_blue             .s:bg_selection   .s:fmt_bo
 exe "hi! CSVColumnOdd"        .s:fg_magenta          .s:bg_selection   .s:fmt_none
 exe "hi! CSVColumnHeaderOdd"  .s:fg_magenta          .s:bg_selection   .s:fmt_bold
 
-exe "hi! cSpecial"    .s:fg_blue   .s:bg_none .s:fmt_none
-exe "hi! cFormat"    .s:fg_green   .s:bg_none .s:fmt_none
+exe "hi! cFormat" .s:fg_magenta s:bg_none .s:fmt_none
 
 " xdefaults "{{{
 exe "hi! xdefaultsLabel"    .s:fg_blue   .s:bg_none .s:fmt_none
