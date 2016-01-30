@@ -243,7 +243,7 @@ exe "hi! Type"            .s:fg_yellow      .s:bg_none        .s:fmt_none
 exe "hi! Structure"       .s:fg_cyan        .s:bg_none        .s:fmt_none
 "		Typedef"
 
-exe "hi! Special"         .s:fg_yellow        .s:bg_none        .s:fmt_bold
+exe "hi! Special"         .s:fg_lmagenta        .s:bg_none        .s:fmt_none
 exe "hi! Delimiter"       .s:fg_red         .s:bg_none        .s:fmt_none
 "		SpecialChar"
 "		Tag"
@@ -339,7 +339,7 @@ exe "hi! CSVColumnHeaderEven" .s:fg_blue             .s:bg_selection   .s:fmt_bo
 exe "hi! CSVColumnOdd"        .s:fg_magenta          .s:bg_selection   .s:fmt_none
 exe "hi! CSVColumnHeaderOdd"  .s:fg_magenta          .s:bg_selection   .s:fmt_bold
 
-exe "hi! cFormat" .s:fg_magenta s:bg_none .s:fmt_none
+exe "hi! cFormat" .s:fg_blue s:bg_none .s:fmt_none
 
 " xdefaults "{{{
 exe "hi! xdefaultsLabel"    .s:fg_blue   .s:bg_none .s:fmt_none
