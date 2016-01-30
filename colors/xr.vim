@@ -221,11 +221,12 @@ exe "hi! Boolean"         .s:fg_magenta     .s:bg_none        .s:fmt_bold
 "		Float"
 
 exe "hi! Identifier"      .s:fg_magenta      .s:bg_none        .s:fmt_none
-exe "hi! Function"        .s:fg_yellow       .s:bg_none        .s:fmt_none
+exe "hi! Function"        .s:fg_magenta       .s:bg_none        .s:fmt_none
 
-exe "hi! Statement"       .s:fg_lblue        .s:bg_none        .s:fmt_none
-exe "hi! Conditional"     .s:fg_blue         .s:bg_none        .s:fmt_none
-exe "hi! Repeat"          .s:fg_blue         .s:bg_none        .s:fmt_none
+exe "hi! Statement"       .s:fg_blue        .s:bg_none        .s:fmt_none
+
+exe "hi! Conditional"     .s:fg_lmagenta         .s:bg_none        .s:fmt_none
+exe "hi! Repeat"          .s:fg_lblue         .s:bg_none        .s:fmt_none
 "		Label"
 exe "hi! Operator"        .s:fg_magenta        .s:bg_none        .s:fmt_none
 exe "hi! Exception"       .s:fg_red         .s:bg_none        .s:fmt_bold
