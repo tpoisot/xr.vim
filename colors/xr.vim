@@ -340,10 +340,10 @@ exe "hi! CSVColumnOdd"        .s:fg_magenta          .s:bg_selection   .s:fmt_no
 exe "hi! CSVColumnHeaderOdd"  .s:fg_magenta          .s:bg_selection   .s:fmt_bold
 
 exe "hi! cSpecial"    .s:fg_blue   .s:bg_none .s:fmt_none
-exe "hi! cFormat"    .s:fg_green   .s:bg_none .s:fmt_bold
+exe "hi! cFormat"    .s:fg_green   .s:bg_none .s:fmt_none
 
 " xdefaults "{{{
-exe "hi! xdefaultsLabel"    .s:fg_blue   .s:bg_none .s:fmt_bold
+exe "hi! xdefaultsLabel"    .s:fg_blue   .s:bg_none .s:fmt_none
 exe "hi! xdefaultsValue"    .s:fg_green   .s:bg_none .s:fmt_none
 exe "hi! xdefaultsIncluded"    .s:fg_magenta   .s:bg_none .s:fmt_none
 " }}}"
