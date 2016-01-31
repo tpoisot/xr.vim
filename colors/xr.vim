@@ -172,7 +172,7 @@ exe "hi! DiffAdd"       .s:fg_green       .s:bg_line        .s:fmt_none
 exe "hi! DiffChange"    .s:fg_blue        .s:bg_line        .s:fmt_bold
 exe "hi! DiffDelete"    .s:fg_red         .s:bg_line        .s:fmt_none
 exe "hi! DiffText"      .s:fg_background  .s:bg_blue        .s:fmt_none
-exe "hi! VertSplit"     .s:fg_window      .s:bg_none        .s:fmt_none
+exe "hi! VertSplit"     .s:fg_line        .s:bg_line        .s:fmt_none
 exe "hi! Folded"        .s:fg_green       .s:bg_selection   .s:fmt_ital
 exe "hi! FoldColumn"    .s:fg_none        .s:bg_none        .s:fmt_none
 exe "hi! SignColumn"    .s:fg_none        .s:bg_none        .s:fmt_none
