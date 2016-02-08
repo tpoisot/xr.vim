@@ -190,7 +190,7 @@ exe "hi! PmenuSel"      .s:fg_magenta     .s:bg_selection   .s:fmt_revr
 "		PmenuSbar"
 "		PmenuThumb"
 exe "hi! Question"      .s:fg_green       .s:bg_none        .s:fmt_none
-exe "hi! Search"        .s:fg_line        .s:bg_lyellow     .s:fmt_none
+exe "hi! Search"        .s:fg_none        .s:bg_none        .s:fmt_revr
 exe "hi! SpecialKey"    .s:fg_selection   .s:bg_none        .s:fmt_none
 exe "hi! SpellBad"      .s:fg_red         .s:bg_none        .s:fmt_curl
 exe "hi! SpellCap"      .s:fg_blue        .s:bg_none        .s:fmt_curl
