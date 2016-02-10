@@ -225,7 +225,7 @@ exe "hi! Function"             .s:fg_blue       .s:bg_none .s:fmt_none
 
 exe "hi! Statement"            .s:fg_lblue      .s:bg_none .s:fmt_none
 
-exe "hi! Conditional"          .s:fg_magenta    .s:bg_none .s:fmt_none
+exe "hi! Conditional"          .s:fg_cyan    .s:bg_none .s:fmt_none
 exe "hi! Repeat"               .s:fg_magenta       .s:bg_none .s:fmt_none
 "       Label"
 exe "hi! Operator"             .s:fg_lblue      .s:bg_none .s:fmt_none
