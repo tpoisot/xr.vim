@@ -268,10 +268,15 @@ exe "hi! qfLineNr"             .s:fg_yellow     .s:bg_none .s:fmt_none
 "}}}
 
 " Make:"{{{
-exe "hi! makeCommands"   .s:fg_foreground .s:bg_none .s:fmt_none
-exe "hi! makeIdent"      .s:fg_magenta    .s:bg_none .s:fmt_none
-exe "hi! makeBString"    .s:fg_green      .s:bg_none .s:fmt_none
-exe "hi! makeSpecTarget" .s:fg_red        .s:bg_none .s:fmt_bold
+exe "hi! makeCommands"                     .s:fg_foreground .s:bg_none .s:fmt_none
+exe "hi! makeIdent"                        .s:fg_magenta    .s:bg_none .s:fmt_none
+exe "hi! makeBString"                      .s:fg_green      .s:bg_none .s:fmt_none
+exe "hi! makeSpecTarget"                   .s:fg_red        .s:bg_none .s:fmt_bold
+" }}}
+
+" XDefault:"{{{
+exe "hi! xdefaultsLabel"                   .s:fg_magenta    .s:bg_none .s:fmt_none
+exe "hi! xdefaultsValue"                   .s:fg_blue       .s:bg_none .s:fmt_none
 " }}}
 
 " Pandoc:"{{{
@@ -291,14 +296,16 @@ exe "hi! pandocDefinitionBlockTerm"        .s:fg_magenta    .s:bg_none .s:fmt_no
 exe "hi! pandocDefinitionBlock"            .s:fg_foreground .s:bg_none .s:fmt_none
 " }}}
 
-exe "hi! SignifySignAdd"       .s:fg_green         .s:bg_none        .s:fmt_none
-exe "hi! SignifySignChange"    .s:fg_blue          .s:bg_none        .s:fmt_none
-exe "hi! SignifySignDelete"    .s:fg_red           .s:bg_none        .s:fmt_none
+" Sign:"{{{
+exe "hi! SignifySignAdd"                   .s:fg_green      .s:bg_none .s:fmt_none
+exe "hi! SignifySignChange"                .s:fg_blue       .s:bg_none .s:fmt_none
+exe "hi! SignifySignDelete"                .s:fg_red        .s:bg_none .s:fmt_none
 
-exe "hi! GitGutterAdd"            .s:fg_green         .s:bg_none        .s:fmt_bold
-exe "hi! GitGutterChange"         .s:fg_blue          .s:bg_none        .s:fmt_bold
-exe "hi! GitGutterDelete"         .s:fg_red           .s:bg_none        .s:fmt_bold
-exe "hi! GitGutterChangeDelete"   .s:fg_magenta       .s:bg_none        .s:fmt_bold
+exe "hi! GitGutterAdd"                     .s:fg_green      .s:bg_none .s:fmt_bold
+exe "hi! GitGutterChange"                  .s:fg_blue       .s:bg_none .s:fmt_bold
+exe "hi! GitGutterDelete"                  .s:fg_red        .s:bg_none .s:fmt_bold
+exe "hi! GitGutterChangeDelete"            .s:fg_magenta    .s:bg_none .s:fmt_bold
+" }}}
 
 " Diff Syntax Highlighting:"{{{
 " ----------------------------------------------------------------------------
