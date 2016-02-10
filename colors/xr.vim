@@ -266,6 +266,40 @@ exe "hi! qfLineNr"             .s:fg_yellow     .s:bg_none .s:fmt_none
 "   qfError"
 
 "}}}
+
+" Make:"{{{
+exe "hi! makeCommands"   .s:fg_foreground .s:bg_none .s:fmt_none
+exe "hi! makeIdent"      .s:fg_magenta    .s:bg_none .s:fmt_none
+exe "hi! makeBString"    .s:fg_green      .s:bg_none .s:fmt_none
+exe "hi! makeSpecTarget" .s:fg_red        .s:bg_none .s:fmt_bold
+" }}}
+
+" Pandoc:"{{{
+exe "hi! Conceal"                          .s:fg_lgreen     .s:bg_none .s:fmt_none
+exe "hi! pandocNoFormatted"                .s:fg_blue       .s:bg_none .s:fmt_none
+exe "hi! pandocDelimitedCodeBlockLanguage" .s:fg_blue       .s:bg_none .s:fmt_bold
+exe "hi! pandocDelimitedCodeBlock"         .s:fg_foreground .s:bg_none .s:fmt_none
+exe "hi! pandocBlockQuote"                 .s:fg_foreground .s:bg_none .s:fmt_none
+exe "hi! pandocReferenceLabel"             .s:fg_green      .s:bg_none .s:fmt_none
+exe "hi! pandocReferenceDefinitionLabel"   .s:fg_green      .s:bg_none .s:fmt_none
+exe "hi! pandocReferenceURL"               .s:fg_foreground .s:bg_none .s:fmt_none
+exe "hi! pandocReferenceDefinitionAddress" .s:fg_foreground .s:bg_none .s:fmt_none
+exe "hi! pandocAtxHeader"                  .s:fg_green      .s:bg_none .s:fmt_bold
+exe "hi! pandocCiteAnchor"                 .s:fg_foreground .s:bg_none .s:fmt_none
+exe "hi! pandocCiteKey"                    .s:fg_cyan       .s:bg_none .s:fmt_none
+exe "hi! pandocDefinitionBlockTerm"        .s:fg_magenta    .s:bg_none .s:fmt_none
+exe "hi! pandocDefinitionBlock"            .s:fg_foreground .s:bg_none .s:fmt_none
+" }}}
+
+exe "hi! SignifySignAdd"       .s:fg_green         .s:bg_none        .s:fmt_none
+exe "hi! SignifySignChange"    .s:fg_blue          .s:bg_none        .s:fmt_none
+exe "hi! SignifySignDelete"    .s:fg_red           .s:bg_none        .s:fmt_none
+
+exe "hi! GitGutterAdd"            .s:fg_green         .s:bg_none        .s:fmt_bold
+exe "hi! GitGutterChange"         .s:fg_blue          .s:bg_none        .s:fmt_bold
+exe "hi! GitGutterDelete"         .s:fg_red           .s:bg_none        .s:fmt_bold
+exe "hi! GitGutterChangeDelete"   .s:fg_magenta       .s:bg_none        .s:fmt_bold
+
 " Diff Syntax Highlighting:"{{{
 " ----------------------------------------------------------------------------
 " Diff
