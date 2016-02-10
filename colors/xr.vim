@@ -215,36 +215,36 @@ exe "hi! Comment"              .s:fg_comment    .s:bg_none .s:fmt_ital
 
 exe "hi! Constant"             .s:fg_red        .s:bg_none .s:fmt_none
 exe "hi! String"               .s:fg_green      .s:bg_none .s:fmt_none
-exe "hi! Boolean"              .s:fg_magenta    .s:bg_none .s:fmt_bold
+exe "hi! Boolean"              .s:fg_cyan    .s:bg_none .s:fmt_bold
+exe "hi! Number"              .s:fg_yellow    .s:bg_none .s:fmt_none
 "       Character"
-"       Number"
 "       Float"
 
 exe "hi! Identifier"           .s:fg_magenta    .s:bg_none .s:fmt_none
-exe "hi! Function"             .s:fg_lmagenta   .s:bg_none .s:fmt_none
+exe "hi! Function"             .s:fg_blue       .s:bg_none .s:fmt_none
 
 exe "hi! Statement"            .s:fg_lblue      .s:bg_none .s:fmt_none
 
 exe "hi! Conditional"          .s:fg_magenta    .s:bg_none .s:fmt_none
-exe "hi! Repeat"               .s:fg_blue       .s:bg_none .s:fmt_none
+exe "hi! Repeat"               .s:fg_magenta       .s:bg_none .s:fmt_none
 "       Label"
-exe "hi! Operator"             .s:fg_foreground .s:bg_none .s:fmt_none
+exe "hi! Operator"             .s:fg_lblue      .s:bg_none .s:fmt_none
 exe "hi! Exception"            .s:fg_red        .s:bg_none .s:fmt_none
 "       Keyword"
 
-exe "hi! PreProc"              .s:fg_cyan       .s:bg_none .s:fmt_none
-exe "hi! Include"              .s:fg_magenta    .s:bg_none .s:fmt_none
-exe "hi! Macro"                .s:fg_red        .s:bg_none .s:fmt_none
+exe "hi! PreProc" .s:fg_red .s:bg_none .s:fmt_none
+exe "hi! Include" .s:fg_magenta     .s:bg_none .s:fmt_none
+exe "hi! Macro"   .s:fg_lred    .s:bg_none .s:fmt_bold
 "       Define"
 "       PreCondit"
 
-exe "hi! Type"                 .s:fg_yellow     .s:bg_none .s:fmt_none
+exe "hi! Type"                 .s:fg_red     .s:bg_none .s:fmt_none
 "       StorageClass"
 exe "hi! Structure"            .s:fg_cyan       .s:bg_none .s:fmt_none
 "       Typedef"
 
 exe "hi! Special"              .s:fg_lmagenta   .s:bg_none .s:fmt_none
-exe "hi! Delimiter"            .s:fg_red        .s:bg_none .s:fmt_none
+exe "hi! Delimiter"            .s:fg_foreground        .s:bg_none .s:fmt_none
 "       SpecialChar"
 "       Tag"
 "       SpecialComment"
@@ -287,78 +287,6 @@ hi! link diffAdded Special
 "		diffComment
 
 "}}}
-" Custom Syntax Highlighting: "{{{
-
-exe "hi! SignifySignAdd"       .s:fg_green         .s:bg_none        .s:fmt_none
-exe "hi! SignifySignChange"    .s:fg_blue          .s:bg_none        .s:fmt_none
-exe "hi! SignifySignDelete"    .s:fg_red           .s:bg_none        .s:fmt_none
-
-exe "hi! GitGutterAdd"            .s:fg_green         .s:bg_none        .s:fmt_bold
-exe "hi! GitGutterChange"         .s:fg_blue          .s:bg_none        .s:fmt_bold
-exe "hi! GitGutterDelete"         .s:fg_red           .s:bg_none        .s:fmt_bold
-exe "hi! GitGutterChangeDelete"   .s:fg_magenta       .s:bg_none        .s:fmt_bold
-
-exe "hi! pandocBlockQuote"     .s:fg_cyan          .s:bg_none        .s:fmt_none
-exe "hi! pandocAtxHeader"      .s:fg_green         .s:bg_none        .s:fmt_bold
-
-exe "hi! Conceal"              .s:fg_yellow        .s:bg_none        .s:fmt_none
-
-" pandoc "{{{
-exe "hi! pandocReferenceLabel"                 .s:fg_lyellow      .s:bg_none        .s:fmt_none
-exe "hi! pandocReferenceDefinitionLabel"       .s:fg_lyellow      .s:bg_none        .s:fmt_none
-exe "hi! pandocReferenceURL"                   .s:fg_comment      .s:bg_none        .s:fmt_none
-exe "hi! pandocReferenceDefinitionAddress"     .s:fg_comment      .s:bg_none        .s:fmt_none
-
-exe "hi! pandocAtxHeader"                      .s:fg_blue         .s:bg_none        .s:fmt_bold
-
-exe "hi! pandocCiteKey"                        .s:fg_green        .s:bg_none        .s:fmt_none
-exe "hi! pandocCiteAnchor"                     .s:fg_blue         .s:bg_none        .s:fmt_none
-
-exe "hi! pandocStrong"                         .s:fg_none         .s:bg_none        .s:fmt_bold
-exe "hi! pandocEmphasis"                       .s:fg_none         .s:bg_none        .s:fmt_ital
-
-exe "hi! criticAddition"                       .s:fg_green        .s:bg_none        .s:fmt_bold
-exe "hi! criticDeletion"                       .s:fg_red          .s:bg_none        .s:fmt_bold
-exe "hi! criticComment"                        .s:fg_magenta      .s:bg_none        .s:fmt_bold
-exe "hi! criticHighlight"                      .s:fg_yellow       .s:bg_none        .s:fmt_bold
-"}}}
-
-exe "hi! juliaRepeat"          .s:fg_yellow        .s:bg_none        .s:fmt_none
-exe "hi! juliaBlKeyword"       .s:fg_cyan          .s:bg_none        .s:fmt_none
-
-" R "{{{
-exe "hi! rDelimiter"       .s:fg_magenta           .s:bg_none        .s:fmt_none
-exe "hi! rDollar"          .s:fg_cyan              .s:bg_none        .s:fmt_none
-" }}}
-
-exe "hi! Todo"          .s:fg_yellow           .s:bg_none        .s:fmt_bold
-exe "hi! Debug"         .s:fg_blue             .s:bg_none        .s:fmt_bold
-
-exe "hi! CSVColumnEven"       .s:fg_blue             .s:bg_selection   .s:fmt_none
-exe "hi! CSVColumnHeaderEven" .s:fg_blue             .s:bg_selection   .s:fmt_bold
-exe "hi! CSVColumnOdd"        .s:fg_magenta          .s:bg_selection   .s:fmt_none
-exe "hi! CSVColumnHeaderOdd"  .s:fg_magenta          .s:bg_selection   .s:fmt_bold
-
-exe "hi! cFormat" .s:fg_blue s:bg_none .s:fmt_none
-
-" xdefaults "{{{
-exe "hi! xdefaultsLabel"    .s:fg_blue   .s:bg_none .s:fmt_none
-exe "hi! xdefaultsValue"    .s:fg_green   .s:bg_none .s:fmt_none
-exe "hi! xdefaultsIncluded"    .s:fg_magenta   .s:bg_none .s:fmt_none
-" }}}"
-
-" mailcap "{{{
-exe "hi! mailcapTypeField"         .s:fg_blue             .s:bg_none        .s:fmt_bold
-exe "hi! mailcapSpecial"           .s:fg_magenta          .s:bg_none        .s:fmt_bold
-exe "hi! mailcapDelimiter"         .s:fg_comment          .s:bg_none        .s:fmt_none
-" }}}
-
-" Makefile "{{{
-exe "hi! makeCommands"         .s:fg_none             .s:bg_none        .s:fmt_none
-exe "hi! makeTarget"           .s:fg_blue             .s:bg_none        .s:fmt_bold
-" }}}
-
-" }}}
 " Legal:"{{{
 " ----------------------------------------------------------------------------
 " Copyright (c) 2011 Ethan Schoonover
