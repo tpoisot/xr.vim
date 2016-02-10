@@ -294,6 +294,9 @@ exe "hi! pandocCiteAnchor"                 .s:fg_foreground .s:bg_none .s:fmt_no
 exe "hi! pandocCiteKey"                    .s:fg_cyan       .s:bg_none .s:fmt_none
 exe "hi! pandocDefinitionBlockTerm"        .s:fg_magenta    .s:bg_none .s:fmt_none
 exe "hi! pandocDefinitionBlock"            .s:fg_foreground .s:bg_none .s:fmt_none
+exe "hi! pandocTableHeaderWord"            .s:fg_blue       .s:bg_none .s:fmt_none
+exe "hi! pandocPipeTableDelims"            .s:fg_line       .s:bg_none .s:fmt_none
+exe "hi! pandocPipeTableHeader"            .s:fg_line       .s:bg_none .s:fmt_none
 " }}}
 
 " Sign:"{{{
