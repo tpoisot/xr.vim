@@ -299,6 +299,13 @@ exe "hi! pandocPipeTableDelims"            .s:fg_line       .s:bg_none .s:fmt_no
 exe "hi! pandocPipeTableHeader"            .s:fg_line       .s:bg_none .s:fmt_none
 " }}}
 
+" Critic:"{{{
+exe "hi! criticAddition"                   .s:fg_green     .s:bg_none     .s:fmt_none
+exe "hi! criticDeletion"                   .s:fg_comment   .s:bg_none     .s:fmt_none
+exe "hi! criticHighlight"                  .s:fg_none      .s:bg_lyellow  .s:fmt_none
+exe "hi! criticComment"                    .s:fg_none      .s:bg_lcyan    .s:fmt_none
+" }}}
+
 " Sign:"{{{
 exe "hi! SignifySignAdd"                   .s:fg_green      .s:bg_none .s:fmt_none
 exe "hi! SignifySignChange"                .s:fg_blue       .s:bg_none .s:fmt_none
