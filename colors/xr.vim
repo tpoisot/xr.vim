@@ -211,56 +211,56 @@ exe "hi! WarningMsg"    .s:fg_red         .s:bg_none        .s:fmt_none
 "}}}
 " Generic Syntax Highlighting: (see :help group-name)"{{{
 " ----------------------------------------------------------------------------
-exe "hi! Comment"         .s:fg_comment     .s:bg_none        .s:fmt_ital
+exe "hi! Comment"              .s:fg_comment    .s:bg_none .s:fmt_ital
 
-exe "hi! Constant"        .s:fg_red         .s:bg_none        .s:fmt_none
-exe "hi! String"          .s:fg_green       .s:bg_none        .s:fmt_none
-exe "hi! Boolean"         .s:fg_magenta     .s:bg_none        .s:fmt_bold
-"		Character"
-"		Number"
-"		Float"
+exe "hi! Constant"             .s:fg_red        .s:bg_none .s:fmt_none
+exe "hi! String"               .s:fg_green      .s:bg_none .s:fmt_none
+exe "hi! Boolean"              .s:fg_magenta    .s:bg_none .s:fmt_bold
+"       Character"
+"       Number"
+"       Float"
 
-exe "hi! Identifier"      .s:fg_magenta      .s:bg_none        .s:fmt_none
-exe "hi! Function"        .s:fg_lmagenta       .s:bg_none        .s:fmt_none
+exe "hi! Identifier"           .s:fg_magenta    .s:bg_none .s:fmt_none
+exe "hi! Function"             .s:fg_lmagenta   .s:bg_none .s:fmt_none
 
-exe "hi! Statement"       .s:fg_lblue        .s:bg_none        .s:fmt_none
+exe "hi! Statement"            .s:fg_lblue      .s:bg_none .s:fmt_none
 
-exe "hi! Conditional"     .s:fg_magenta         .s:bg_none        .s:fmt_none
-exe "hi! Repeat"          .s:fg_blue         .s:bg_none        .s:fmt_none
-"		Label"
-exe "hi! Operator"        .s:fg_lred        .s:bg_none        .s:fmt_none
-exe "hi! Exception"       .s:fg_red         .s:bg_none        .s:fmt_none
-"		Keyword"
+exe "hi! Conditional"          .s:fg_magenta    .s:bg_none .s:fmt_none
+exe "hi! Repeat"               .s:fg_blue       .s:bg_none .s:fmt_none
+"       Label"
+exe "hi! Operator"             .s:fg_foreground .s:bg_none .s:fmt_none
+exe "hi! Exception"            .s:fg_red        .s:bg_none .s:fmt_none
+"       Keyword"
 
-exe "hi! PreProc"         .s:fg_cyan          .s:bg_none        .s:fmt_none
-exe "hi! Include"         .s:fg_magenta        .s:bg_none        .s:fmt_none
-exe "hi! Macro"           .s:fg_red            .s:bg_none        .s:fmt_none
-"		Define"
-"		PreCondit"
+exe "hi! PreProc"              .s:fg_cyan       .s:bg_none .s:fmt_none
+exe "hi! Include"              .s:fg_magenta    .s:bg_none .s:fmt_none
+exe "hi! Macro"                .s:fg_red        .s:bg_none .s:fmt_none
+"       Define"
+"       PreCondit"
 
-exe "hi! Type"            .s:fg_yellow      .s:bg_none        .s:fmt_none
-"		StorageClass"
-exe "hi! Structure"       .s:fg_cyan        .s:bg_none        .s:fmt_none
-"		Typedef"
+exe "hi! Type"                 .s:fg_yellow     .s:bg_none .s:fmt_none
+"       StorageClass"
+exe "hi! Structure"            .s:fg_cyan       .s:bg_none .s:fmt_none
+"       Typedef"
 
-exe "hi! Special"         .s:fg_lmagenta        .s:bg_none        .s:fmt_none
-exe "hi! Delimiter"       .s:fg_red         .s:bg_none        .s:fmt_none
-"		SpecialChar"
-"		Tag"
-"		SpecialComment"
-"		Debug"
+exe "hi! Special"              .s:fg_lmagenta   .s:bg_none .s:fmt_none
+exe "hi! Delimiter"            .s:fg_red        .s:bg_none .s:fmt_none
+"       SpecialChar"
+"       Tag"
+"       SpecialComment"
+"       Debug"
 "
-exe "hi! Underlined"      .s:fg_blue        .s:bg_none        .s:fmt_none
+exe "hi! Underlined"           .s:fg_blue       .s:bg_none .s:fmt_none
 
-exe "hi! Ignore"          .s:fg_none        .s:bg_none        .s:fmt_none
+exe "hi! Ignore"               .s:fg_none       .s:bg_none .s:fmt_none
 
-exe "hi! Error"           .s:fg_red         .s:bg_none        .s:fmt_undr
+exe "hi! Error"                .s:fg_red        .s:bg_none .s:fmt_undr
 
-exe "hi! Todo"            .s:fg_lyellow     .s:bg_none        .s:fmt_bold
-exe "hi! Debug"           .s:fg_lblue       .s:bg_none        .s:fmt_bold
+exe "hi! Todo"                 .s:fg_lyellow    .s:bg_none .s:fmt_bold
+exe "hi! Debug"                .s:fg_lblue      .s:bg_none .s:fmt_bold
 
 " Quickfix window highlighting
-exe "hi! qfLineNr"        .s:fg_yellow      .s:bg_none        .s:fmt_none
+exe "hi! qfLineNr"             .s:fg_yellow     .s:bg_none .s:fmt_none
 "   qfFileName"
 "   qfLineNr"
 "   qfError"
