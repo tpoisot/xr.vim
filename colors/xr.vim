@@ -317,6 +317,10 @@ exe "hi! GitGutterDelete"                  .s:fg_red        .s:bg_none .s:fmt_bo
 exe "hi! GitGutterChangeDelete"            .s:fg_magenta    .s:bg_none .s:fmt_bold
 " }}}
 
+" MuttEmail:"{{{
+exe "hi! mailSignature"            .s:fg_comment    .s:bg_none .s:fmt_none
+" }}}
+
 " Diff Syntax Highlighting:"{{{
 " ----------------------------------------------------------------------------
 " Diff
