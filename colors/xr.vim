@@ -222,7 +222,7 @@ exe "hi! Comment"              .s:fg_comment    .s:bg_none .s:fmt_ital
 
 exe "hi! Constant"             .s:fg_red        .s:bg_none .s:fmt_none
 exe "hi! String"               .s:fg_green      .s:bg_none .s:fmt_none
-exe "hi! Boolean"              .s:fg_cyan    .s:bg_none .s:fmt_bold
+exe "hi! Boolean"              .s:fg_cyan    .s:bg_none .s:fmt_none
 exe "hi! Number"              .s:fg_yellow    .s:bg_none .s:fmt_none
 "       Character"
 "       Float"
