@@ -220,37 +220,38 @@ exe "hi! WarningMsg"    .s:fg_red         .s:bg_none        .s:fmt_none
 " ----------------------------------------------------------------------------
 exe "hi! Comment"              .s:fg_comment    .s:bg_none .s:fmt_ital
 
-exe "hi! Constant"             .s:fg_red        .s:bg_none .s:fmt_none
-exe "hi! String"               .s:fg_green      .s:bg_none .s:fmt_none
-exe "hi! Boolean"              .s:fg_cyan    .s:bg_none .s:fmt_none
-exe "hi! Number"               .s:fg_yellow    .s:bg_none .s:fmt_none
+exe "hi! Constant"             .s:fg_green        .s:bg_none .s:fmt_none
+exe "hi! String"               .s:fg_yellow      .s:bg_none .s:fmt_none
+exe "hi! Boolean"              .s:fg_cyan       .s:bg_none .s:fmt_none
+exe "hi! Number"               .s:fg_green      .s:bg_none .s:fmt_none
 "       Character"
 "       Float"
 
 exe "hi! Identifier"           .s:fg_magenta    .s:bg_none .s:fmt_none
 exe "hi! Function"             .s:fg_blue       .s:bg_none .s:fmt_none
 
-exe "hi! Statement"            .s:fg_lblue      .s:bg_none .s:fmt_none
+exe "hi! Statement"            .s:fg_blue      .s:bg_none .s:fmt_none
 
-exe "hi! Conditional"          .s:fg_cyan    .s:bg_none .s:fmt_none
+exe "hi! Conditional"          .s:fg_magenta    .s:bg_none .s:fmt_none
 exe "hi! Repeat"               .s:fg_magenta       .s:bg_none .s:fmt_none
 "       Label"
-exe "hi! Operator"             .s:fg_lblue      .s:bg_none .s:fmt_none
+exe "hi! Operator"             .s:fg_comment      .s:bg_none .s:fmt_none
+exe "hi! Keyword"             .s:fg_blue      .s:bg_none .s:fmt_none
 exe "hi! Exception"            .s:fg_red        .s:bg_none .s:fmt_none
 "       Keyword"
 
 exe "hi! PreProc" .s:fg_red .s:bg_none .s:fmt_none
 exe "hi! Include" .s:fg_magenta     .s:bg_none .s:fmt_none
-exe "hi! Macro"   .s:fg_lred    .s:bg_none .s:fmt_bold
+exe "hi! Macro"   .s:fg_lred    .s:bg_none .s:fmt_none
 "       Define"
 "       PreCondit"
 
-exe "hi! Type"                 .s:fg_red     .s:bg_none .s:fmt_none
+exe "hi! Type"                 .s:fg_lgreen     .s:bg_none .s:fmt_none
 "       StorageClass"
 exe "hi! Structure"            .s:fg_cyan       .s:bg_none .s:fmt_none
 "       Typedef"
 
-exe "hi! Special"              .s:fg_lmagenta   .s:bg_none .s:fmt_none
+exe "hi! Special"              .s:fg_magenta   .s:bg_none .s:fmt_none
 exe "hi! Delimiter"            .s:fg_foreground        .s:bg_none .s:fmt_none
 "       SpecialChar"
 "       Tag"
@@ -280,6 +281,8 @@ exe "hi! makeIdent"                        .s:fg_magenta    .s:bg_none .s:fmt_no
 exe "hi! makeBString"                      .s:fg_green      .s:bg_none .s:fmt_none
 exe "hi! makeSpecTarget"                   .s:fg_red        .s:bg_none .s:fmt_bold
 " }}}
+
+exe "hi! juliaTriString" .s:fg_comment .s:bg_none .s:fmt_none
 
 " XDefault:"{{{
 exe "hi! xdefaultsLabel"                   .s:fg_magenta    .s:bg_none .s:fmt_none
