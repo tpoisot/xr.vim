@@ -246,7 +246,7 @@ exe "hi! Macro"   .s:fg_lred    .s:bg_none .s:fmt_none
 "       Define"
 "       PreCondit"
 
-exe "hi! Type"                 .s:fg_lmagenta     .s:bg_none .s:fmt_none
+exe "hi! Type"                 .s:fg_lred     .s:bg_none .s:fmt_none
 "       StorageClass"
 exe "hi! Structure"            .s:fg_cyan       .s:bg_none .s:fmt_none
 "       Typedef"
@@ -290,9 +290,9 @@ exe "hi! xdefaultsValue"                   .s:fg_blue       .s:bg_none .s:fmt_no
 " }}}
 
 " Pandoc:"{{{
-exe "hi! Conceal"                          .s:fg_lgreen     .s:bg_none .s:fmt_none
-exe "hi! pandocNoFormatted"                .s:fg_blue       .s:bg_none .s:fmt_none
-exe "hi! pandocDelimitedCodeBlockLanguage" .s:fg_blue       .s:bg_none .s:fmt_bold
+exe "hi! Conceal"                          .s:fg_yellow     .s:bg_none .s:fmt_bold
+exe "hi! pandocNoFormatted"                .s:fg_lmagenta   .s:bg_none .s:fmt_none
+exe "hi! pandocDelimitedCodeBlockLanguage" .s:fg_comment    .s:bg_none .s:fmt_none
 exe "hi! pandocDelimitedCodeBlock"         .s:fg_foreground .s:bg_none .s:fmt_none
 exe "hi! pandocBlockQuote"                 .s:fg_foreground .s:bg_none .s:fmt_none
 exe "hi! pandocReferenceLabel"             .s:fg_green      .s:bg_none .s:fmt_none
@@ -300,13 +300,13 @@ exe "hi! pandocReferenceDefinitionLabel"   .s:fg_green      .s:bg_none .s:fmt_no
 exe "hi! pandocReferenceURL"               .s:fg_foreground .s:bg_none .s:fmt_none
 exe "hi! pandocReferenceDefinitionAddress" .s:fg_foreground .s:bg_none .s:fmt_none
 exe "hi! pandocAtxHeader"                  .s:fg_none       .s:bg_none .s:fmt_bold
-exe "hi! pandocCiteAnchor"                 .s:fg_foreground .s:bg_none .s:fmt_none
-exe "hi! pandocCiteKey"                    .s:fg_cyan       .s:bg_none .s:fmt_none
+exe "hi! pandocCiteAnchor"                 .s:fg_comment    .s:bg_none .s:fmt_none
+exe "hi! pandocCiteKey"                    .s:fg_lblue      .s:bg_none .s:fmt_none
 exe "hi! pandocDefinitionBlockTerm"        .s:fg_magenta    .s:bg_none .s:fmt_none
 exe "hi! pandocDefinitionBlock"            .s:fg_foreground .s:bg_none .s:fmt_none
 exe "hi! pandocTableHeaderWord"            .s:fg_blue       .s:bg_none .s:fmt_none
-exe "hi! pandocPipeTableDelims"            .s:fg_line       .s:bg_none .s:fmt_none
-exe "hi! pandocPipeTableHeader"            .s:fg_line       .s:bg_none .s:fmt_none
+exe "hi! pandocPipeTableDelims"            .s:fg_comment    .s:bg_none .s:fmt_none
+exe "hi! pandocPipeTableHeader"            .s:fg_comment    .s:bg_none .s:fmt_none
 " }}}
 
 " Critic:"{{{
