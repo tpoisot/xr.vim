@@ -299,7 +299,7 @@ exe "hi! pandocReferenceLabel"             .s:fg_green      .s:bg_none .s:fmt_no
 exe "hi! pandocReferenceDefinitionLabel"   .s:fg_green      .s:bg_none .s:fmt_none
 exe "hi! pandocReferenceURL"               .s:fg_foreground .s:bg_none .s:fmt_none
 exe "hi! pandocReferenceDefinitionAddress" .s:fg_foreground .s:bg_none .s:fmt_none
-exe "hi! pandocAtxHeader"                  .s:fg_none       .s:bg_none .s:fmt_bold
+exe "hi! pandocAtxHeader"                  .s:fg_comment    .s:bg_none .s:fmt_bold
 exe "hi! pandocCiteAnchor"                 .s:fg_comment    .s:bg_none .s:fmt_none
 exe "hi! pandocCiteKey"                    .s:fg_lblue      .s:bg_none .s:fmt_none
 exe "hi! pandocDefinitionBlockTerm"        .s:fg_magenta    .s:bg_none .s:fmt_none
