@@ -251,7 +251,7 @@ exe "hi! Type"                 .s:fg_lred     .s:bg_none .s:fmt_none
 exe "hi! Structure"            .s:fg_cyan       .s:bg_none .s:fmt_none
 "       Typedef"
 
-exe "hi! Special"              .s:fg_magenta   .s:bg_none .s:fmt_bold
+exe "hi! Special"              .s:fg_magenta   .s:bg_none .s:fmt_none
 exe "hi! Delimiter"            .s:fg_foreground        .s:bg_none .s:fmt_none
 "       SpecialChar"
 "       Tag"
