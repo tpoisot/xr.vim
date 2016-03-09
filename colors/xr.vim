@@ -292,6 +292,7 @@ exe "hi! xdefaultsValue"                   .s:fg_blue       .s:bg_none .s:fmt_no
 " Pandoc:"{{{
 exe "hi! Conceal"                          .s:fg_yellow     .s:bg_none .s:fmt_bold
 exe "hi! pandocNoFormatted"                .s:fg_lmagenta   .s:bg_none .s:fmt_none
+exe "hi! pandocCodeBlock"                  .s:fg_lcyan      .s:bg_none .s:fmt_none
 exe "hi! pandocDelimitedCodeBlockLanguage" .s:fg_comment    .s:bg_none .s:fmt_none
 exe "hi! pandocDelimitedCodeBlock"         .s:fg_foreground .s:bg_none .s:fmt_none
 exe "hi! pandocBlockQuote"                 .s:fg_foreground .s:bg_none .s:fmt_none
