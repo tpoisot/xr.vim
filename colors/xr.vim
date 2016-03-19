@@ -218,7 +218,7 @@ exe "hi! WarningMsg"    .s:fg_red         .s:bg_none        .s:fmt_none
 "}}}
 " Generic Syntax Highlighting: (see :help group-name)"{{{
 " ----------------------------------------------------------------------------
-exe "hi! Comment"              .s:fg_comment    .s:bg_none .s:fmt_ital
+exe "hi! Comment"              .s:fg_comment    .s:bg_none .s:fmt_none
 
 exe "hi! Constant"             .s:fg_yellow      .s:bg_none .s:fmt_none
 exe "hi! String"               .s:fg_green      .s:bg_none .s:fmt_none
