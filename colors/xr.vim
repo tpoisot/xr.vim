@@ -175,7 +175,7 @@ exe "hi! SignColumn"    .s:fg_none        .s:bg_none        .s:fmt_none
 "		Incsearch"
 exe "hi! LineNr"        .s:fg_line        .s:bg_none        .s:fmt_none
 exe "hi! CursorLineNr"  .s:fg_comment     .s:bg_selection   .s:fmt_bold
-exe "hi! MatchParen"    .s:fg_yellow      .s:bg_none        .s:fmt_bold
+exe "hi! MatchParen"    .s:fg_red         .s:bg_none        .s:fmt_bold
 exe "hi! ModeMsg"       .s:fg_green       .s:bg_none        .s:fmt_bold
 exe "hi! MoreMsg"       .s:fg_blue        .s:bg_none        .s:fmt_bold
 exe "hi! ErrorMsg"      .s:fg_red         .s:bg_none        .s:fmt_bold
@@ -279,7 +279,7 @@ exe "hi! xdefaultsValue"                   .s:fg_blue       .s:bg_none .s:fmt_no
 " }}}
 
 " Pandoc:"{{{
-exe "hi! Conceal"                          .s:fg_yellow     .s:bg_none .s:fmt_bold
+exe "hi! Conceal"                          .s:fg_yellow     .s:bg_none .s:fmt_none
 exe "hi! pandocNoFormatted"                .s:fg_lmagenta   .s:bg_none .s:fmt_none
 exe "hi! pandocCodeBlock"                  .s:fg_lcyan      .s:bg_none .s:fmt_none
 exe "hi! pandocDelimitedCodeBlockLanguage" .s:fg_comment    .s:bg_none .s:fmt_none
