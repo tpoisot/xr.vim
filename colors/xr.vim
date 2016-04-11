@@ -298,7 +298,7 @@ exe "hi! pandocAtxHeader"                  .s:fg_blue       .s:bg_none .s:fmt_bo
 exe "hi! pandocCiteAnchor"                 .s:fg_green    .s:bg_none .s:fmt_none
 exe "hi! pandocCiteKey"                    .s:fg_blue     .s:bg_none .s:fmt_none
 
-exe "hi! pandocDefinitionBlockTerm"        .s:fg_cyan       .s:bg_none .s:fmt_bold
+exe "hi! pandocDefinitionBlockTerm"        .s:fg_cyan       .s:bg_none .s:fmt_none
 exe "hi! pandocDefinitionBlock"            .s:fg_foreground .s:bg_none .s:fmt_none
 
 exe "hi! pandocTableHeaderWord"            .s:fg_blue       .s:bg_none .s:fmt_none
