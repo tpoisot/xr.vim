@@ -61,13 +61,25 @@ exe Format("FoldColumn", s:n, s:lwh, s:n)
 exe Format("Folded", s:n, s:lwh, s:n)
 
 " Base elements
-exe Format("Comment", s:lbl, s:n, s:i)
+exe Format("Comment", s:wh, s:n, s:i)
 exe Format("String", s:gre, s:n, s:n)
 exe Format("Identifier", s:blu, s:n, s:n)
-exe Format("Type", s:mag, s:n, s:n)
+exe Format("Type", s:blu, s:n, s:n)
 exe Format("Boolean", s:red, s:n, s:i)
 exe Format("Statement", s:mag, s:n, s:n)
+exe Format("Keyword", s:blu, s:n, s:n)
+exe Format("Conceal", s:yel, s:n, s:b)
+exe Format("Operator", s:wh, s:n, s:n)
+exe Format("Delimiter", s:wh, s:n, s:n)
+exe Format("Macro", s:yel, s:n, s:b)
 
+" Vim config
+exe Format("vimMapModKey", s:blu, s:n, s:b)
+exe Format("vimOption", s:blu, s:n, s:n)
 
+" Make files
+exe Format("makeIdent", s:gre, s:n, s:n)
+exe Format("makeTarget", s:blu, s:n, s:b)
+exe Format("makeCommands", s:bl, s:n, s:n)
 
 "  }}}
