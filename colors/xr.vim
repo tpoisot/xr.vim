@@ -101,4 +101,8 @@ exe Format("SpellBad"     , s:n    , s:lred , s:n)
 exe Format("SpellCap"     , s:n    , s:lblu , s:n)
 exe Format("SpellRare"    , s:n    , s:lcya , s:n)
 
+" Critic Markup
+exe Format("criticAddition"    , s:gre , s:n , s:i)
+exe Format("criticDeletion"    , s:red , s:n , s:i)
+
 "  }}}
