@@ -74,6 +74,8 @@ exe Format("Identifier"   , s:blu , s:n   , s:n)
 exe Format("Type"         , s:lblu , s:n   , s:n)
 exe Format("Boolean"      , s:red , s:n   , s:i)
 exe Format("Statement"    , s:mag , s:n   , s:n)
+exe Format("Conditional"    , s:lmag , s:n   , s:n)
+exe Format("PreProc"    , s:cya , s:n   , s:n)
 exe Format("Keyword"      , s:blu , s:n   , s:n)
 exe Format("Conceal"      , s:yel , s:n   , s:n)
 exe Format("Operator"     , s:wh  , s:n   , s:n)
@@ -88,5 +90,10 @@ exe Format("vimOption"    , s:blu , s:n   , s:n)
 exe Format("makeIdent"    , s:gre , s:n   , s:n)
 exe Format("makeTarget"   , s:blu , s:n   , s:b)
 exe Format("makeCommands" , s:bl  , s:n   , s:n)
+
+" Spelling
+exe Format("SpellBad", s:n, s:lred, s:n)
+exe Format("SpellCap", s:n, s:lblu, s:n)
+exe Format("SpellRare", s:n, s:lcya, s:n)
 
 "  }}}
