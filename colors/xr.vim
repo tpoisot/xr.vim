@@ -47,6 +47,7 @@ exe Format("LineNr", s:lbl, s:n, s:n)
 exe Format("CursorLineNr", s:bl, s:n, s:b)
 exe Format("CursorLine", s:n, s:n, s:n)
 exe Format("SignColumn", s:n, s:n, s:n)
+exe Format("Search", s:n, s:n, s:r)
 
 " Diff
 exe Format("DiffAdd", s:gre, s:n, s:b)
@@ -54,8 +55,12 @@ exe Format("DiffChange", s:blu, s:n, s:b)
 exe Format("DiffDelete", s:red, s:n, s:b)
 exe Format("DiffText", s:bl, s:n, s:b)
 
+" Fold
+exe Format("FoldColumn", s:n, s:lwh, s:n)
+exe Format("Folded", s:n, s:lwh, s:n)
+
 " Base elements
-exe Format("Comment", s:wh, s:n, s:i)
+exe Format("Comment", s:lbl, s:n, s:i)
 exe Format("String", s:gre, s:n, s:n)
 
 "  }}}
