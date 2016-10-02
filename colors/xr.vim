@@ -57,12 +57,16 @@ exe Format("SignColumn"   , s:n    , s:n    , s:n)
 exe Format("Search"       , s:n    , s:n    , s:r)
 exe Format("MatchParen"   , s:n    , s:n    , s:r.s:b)
 exe Format("Visual"       , s:n    , s:lwh  , s:n)
+exe Format("VertSplit"       , s:wh    , s:wh  , s:n)
+exe Format("StatusLine"       , s:n    , s:wh  , s:n)
+exe Format("StatusLineNC"       , s:lwh    , s:wh  , s:n)
+
 
 " Diff
-exe Format("DiffAdd"      , s:lgre , s:n    , s:n)
-exe Format("DiffChange"   , s:lblu , s:n    , s:n)
-exe Format("DiffDelete"   , s:lred , s:n    , s:n)
-exe Format("DiffText"     , s:lbl  , s:n    , s:n)
+exe Format("DiffAdd"      , s:gre , s:n    , s:n)
+exe Format("DiffChange"   , s:blu , s:n    , s:n)
+exe Format("DiffDelete"   , s:red , s:n    , s:n)
+exe Format("DiffText"     , s:bl  , s:n    , s:n)
 
 " Fold
 exe Format("FoldColumn"   , s:n    , s:lwh  , s:n)
