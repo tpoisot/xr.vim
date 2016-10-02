@@ -48,6 +48,7 @@ exe Format("CursorLineNr", s:bl, s:n, s:b)
 exe Format("CursorLine", s:n, s:n, s:n)
 exe Format("SignColumn", s:n, s:n, s:n)
 exe Format("Search", s:n, s:n, s:r)
+exe Format("MatchParen", s:n, s:n, s:r,s:b)
 
 " Diff
 exe Format("DiffAdd", s:gre, s:n, s:b)
@@ -62,5 +63,11 @@ exe Format("Folded", s:n, s:lwh, s:n)
 " Base elements
 exe Format("Comment", s:lbl, s:n, s:i)
 exe Format("String", s:gre, s:n, s:n)
+exe Format("Identifier", s:blu, s:n, s:n)
+exe Format("Type", s:mag, s:n, s:n)
+exe Format("Boolean", s:red, s:n, s:i)
+exe Format("Statement", s:mag, s:n, s:n)
+
+
 
 "  }}}
