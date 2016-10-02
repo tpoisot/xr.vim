@@ -50,50 +50,51 @@ endfunction
 " ----------------------------------------------------------------------------
 
 " Interface elements
-exe Format("LineNr"       , s:lbl , s:n   , s:n)
-exe Format("CursorLineNr" , s:bl  , s:n   , s:b)
-exe Format("CursorLine"   , s:n   , s:n   , s:n)
-exe Format("SignColumn"   , s:n   , s:n   , s:n)
-exe Format("Search"       , s:n   , s:n   , s:r)
-exe Format("MatchParen"   , s:n   , s:n   , s:r.s:b)
+exe Format("LineNr"       , s:lbl  , s:n    , s:n)
+exe Format("CursorLineNr" , s:bl   , s:n    , s:b)
+exe Format("CursorLine"   , s:n    , s:n    , s:n)
+exe Format("SignColumn"   , s:n    , s:n    , s:n)
+exe Format("Search"       , s:n    , s:n    , s:r)
+exe Format("MatchParen"   , s:n    , s:n    , s:r.s:b)
+exe Format("Visual"       , s:n    , s:lwh  , s:n)
 
 " Diff
-exe Format("DiffAdd"      , s:lgre , s:n   , s:n)
-exe Format("DiffChange"   , s:lblu , s:n   , s:n)
-exe Format("DiffDelete"   , s:lred , s:n   , s:n)
-exe Format("DiffText"     , s:lbl  , s:n   , s:n)
+exe Format("DiffAdd"      , s:lgre , s:n    , s:n)
+exe Format("DiffChange"   , s:lblu , s:n    , s:n)
+exe Format("DiffDelete"   , s:lred , s:n    , s:n)
+exe Format("DiffText"     , s:lbl  , s:n    , s:n)
 
 " Fold
-exe Format("FoldColumn"   , s:n   , s:lwh , s:n)
-exe Format("Folded"       , s:n   , s:lwh , s:n)
+exe Format("FoldColumn"   , s:n    , s:lwh  , s:n)
+exe Format("Folded"       , s:n    , s:lwh  , s:n)
 
 " Base elements
-exe Format("Comment"      , s:wh  , s:n   , s:i)
-exe Format("String"       , s:gre , s:n   , s:n)
-exe Format("Identifier"   , s:blu , s:n   , s:n)
-exe Format("Type"         , s:lblu , s:n   , s:n)
-exe Format("Boolean"      , s:red , s:n   , s:i)
-exe Format("Statement"    , s:mag , s:n   , s:n)
-exe Format("Conditional"    , s:lmag , s:n   , s:n)
-exe Format("PreProc"    , s:cya , s:n   , s:n)
-exe Format("Keyword"      , s:blu , s:n   , s:n)
-exe Format("Conceal"      , s:yel , s:n   , s:n)
-exe Format("Operator"     , s:wh  , s:n   , s:n)
-exe Format("Delimiter"    , s:wh  , s:n   , s:n)
-exe Format("Macro"        , s:lyel , s:n   , s:n)
+exe Format("Comment"      , s:wh   , s:n    , s:i)
+exe Format("String"       , s:gre  , s:n    , s:n)
+exe Format("Identifier"   , s:blu  , s:n    , s:n)
+exe Format("Type"         , s:lblu , s:n    , s:n)
+exe Format("Boolean"      , s:red  , s:n    , s:i)
+exe Format("Statement"    , s:mag  , s:n    , s:n)
+exe Format("Conditional"  , s:lmag , s:n    , s:n)
+exe Format("PreProc"      , s:cya  , s:n    , s:n)
+exe Format("Keyword"      , s:blu  , s:n    , s:n)
+exe Format("Conceal"      , s:yel  , s:n    , s:n)
+exe Format("Operator"     , s:wh   , s:n    , s:n)
+exe Format("Delimiter"    , s:wh   , s:n    , s:n)
+exe Format("Macro"        , s:lyel , s:n    , s:n)
 
 " Vim config
-exe Format("vimMapModKey" , s:lblu , s:n   , s:n)
-exe Format("vimOption"    , s:blu , s:n   , s:n)
+exe Format("vimMapModKey" , s:lblu , s:n    , s:n)
+exe Format("vimOption"    , s:blu  , s:n    , s:n)
 
 " Make files
-exe Format("makeIdent"    , s:gre , s:n   , s:n)
-exe Format("makeTarget"   , s:blu , s:n   , s:b)
-exe Format("makeCommands" , s:bl  , s:n   , s:n)
+exe Format("makeIdent"    , s:gre  , s:n    , s:n)
+exe Format("makeTarget"   , s:blu  , s:n    , s:b)
+exe Format("makeCommands" , s:bl   , s:n    , s:n)
 
 " Spelling
-exe Format("SpellBad", s:n, s:lred, s:n)
-exe Format("SpellCap", s:n, s:lblu, s:n)
-exe Format("SpellRare", s:n, s:lcya, s:n)
+exe Format("SpellBad"     , s:n    , s:lred , s:n)
+exe Format("SpellCap"     , s:n    , s:lblu , s:n)
+exe Format("SpellRare"    , s:n    , s:lcya , s:n)
 
 "  }}}
