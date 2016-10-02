@@ -30,6 +30,13 @@ let s:blu = "4"
 let s:mag = "5"
 let s:cya = "6"
 
+let s:lred = "9"
+let s:lgre = "10"
+let s:lyel = "11"
+let s:lblu = "12"
+let s:lmag = "13"
+let s:lcya = "14"
+
 let s:bl  = "0"
 let s:lbl = "8"
 let s:wh  = "7"
@@ -43,43 +50,43 @@ endfunction
 " ----------------------------------------------------------------------------
 
 " Interface elements
-exe Format("LineNr", s:lbl, s:n, s:n)
-exe Format("CursorLineNr", s:bl, s:n, s:b)
-exe Format("CursorLine", s:n, s:n, s:n)
-exe Format("SignColumn", s:n, s:n, s:n)
-exe Format("Search", s:n, s:n, s:r)
-exe Format("MatchParen", s:n, s:n, s:r,s:b)
+exe Format("LineNr"       , s:lbl , s:n   , s:n)
+exe Format("CursorLineNr" , s:bl  , s:n   , s:b)
+exe Format("CursorLine"   , s:n   , s:n   , s:n)
+exe Format("SignColumn"   , s:n   , s:n   , s:n)
+exe Format("Search"       , s:n   , s:n   , s:r)
+exe Format("MatchParen"   , s:n   , s:n   , s:r.s:b)
 
 " Diff
-exe Format("DiffAdd", s:gre, s:n, s:b)
-exe Format("DiffChange", s:blu, s:n, s:b)
-exe Format("DiffDelete", s:red, s:n, s:b)
-exe Format("DiffText", s:bl, s:n, s:b)
+exe Format("DiffAdd"      , s:lgre , s:n   , s:n)
+exe Format("DiffChange"   , s:lblu , s:n   , s:n)
+exe Format("DiffDelete"   , s:lred , s:n   , s:n)
+exe Format("DiffText"     , s:lbl  , s:n   , s:n)
 
 " Fold
-exe Format("FoldColumn", s:n, s:lwh, s:n)
-exe Format("Folded", s:n, s:lwh, s:n)
+exe Format("FoldColumn"   , s:n   , s:lwh , s:n)
+exe Format("Folded"       , s:n   , s:lwh , s:n)
 
 " Base elements
-exe Format("Comment", s:wh, s:n, s:i)
-exe Format("String", s:gre, s:n, s:n)
-exe Format("Identifier", s:blu, s:n, s:n)
-exe Format("Type", s:blu, s:n, s:n)
-exe Format("Boolean", s:red, s:n, s:i)
-exe Format("Statement", s:mag, s:n, s:n)
-exe Format("Keyword", s:blu, s:n, s:n)
-exe Format("Conceal", s:yel, s:n, s:b)
-exe Format("Operator", s:wh, s:n, s:n)
-exe Format("Delimiter", s:wh, s:n, s:n)
-exe Format("Macro", s:yel, s:n, s:b)
+exe Format("Comment"      , s:wh  , s:n   , s:i)
+exe Format("String"       , s:gre , s:n   , s:n)
+exe Format("Identifier"   , s:blu , s:n   , s:n)
+exe Format("Type"         , s:lblu , s:n   , s:n)
+exe Format("Boolean"      , s:red , s:n   , s:i)
+exe Format("Statement"    , s:mag , s:n   , s:n)
+exe Format("Keyword"      , s:blu , s:n   , s:n)
+exe Format("Conceal"      , s:yel , s:n   , s:n)
+exe Format("Operator"     , s:wh  , s:n   , s:n)
+exe Format("Delimiter"    , s:wh  , s:n   , s:n)
+exe Format("Macro"        , s:lyel , s:n   , s:n)
 
 " Vim config
-exe Format("vimMapModKey", s:blu, s:n, s:b)
-exe Format("vimOption", s:blu, s:n, s:n)
+exe Format("vimMapModKey" , s:lblu , s:n   , s:n)
+exe Format("vimOption"    , s:blu , s:n   , s:n)
 
 " Make files
-exe Format("makeIdent", s:gre, s:n, s:n)
-exe Format("makeTarget", s:blu, s:n, s:b)
-exe Format("makeCommands", s:bl, s:n, s:n)
+exe Format("makeIdent"    , s:gre , s:n   , s:n)
+exe Format("makeTarget"   , s:blu , s:n   , s:b)
+exe Format("makeCommands" , s:bl  , s:n   , s:n)
 
 "  }}}
