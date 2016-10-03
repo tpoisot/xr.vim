@@ -105,4 +105,9 @@ exe Format("SpellRare"    , s:n    , s:lcya , s:n)
 exe Format("criticAddition"    , s:gre , s:n , s:i)
 exe Format("criticDeletion"    , s:red , s:n , s:i)
 
+" Pandoc
+exe Format("pandocCiteAnchor"    , s:bl , s:n , s:b)
+exe Format("pandocCiteKey"    , s:lgre , s:n , s:n)
+exe Format("pandocAtxHeader"    , s:gre , s:n , s:b)
+
 "  }}}
