@@ -50,8 +50,8 @@ endfunction
 " ----------------------------------------------------------------------------
 
 " Interface elements
-exe Format("LineNr"       , s:lbl  , s:n    , s:n)
-exe Format("CursorLineNr" , s:bl   , s:n    , s:b)
+exe Format("LineNr"       , s:wh  , s:n    , s:n)
+exe Format("CursorLineNr" , s:lbl   , s:n    , s:n)
 exe Format("CursorLine"   , s:n    , s:n    , s:n)
 exe Format("SignColumn"   , s:n    , s:n    , s:n)
 exe Format("Search"       , s:n    , s:n    , s:r)
@@ -60,6 +60,11 @@ exe Format("Visual"       , s:n    , s:lwh  , s:n)
 exe Format("VertSplit"       , s:wh    , s:wh  , s:n)
 exe Format("StatusLine"       , s:n    , s:wh  , s:n)
 exe Format("StatusLineNC"       , s:lwh    , s:wh  , s:n)
+
+exe Format("Pmenu"       , s:bl    , s:lwh  , s:n)
+exe Format("PmenuSel"       , s:lwh    , s:lbl  , s:n)
+exe Format("PmenuSbar"       , s:lwh    , s:lwh  , s:n)
+exe Format("PmenuThumb"       , s:wh    , s:wh  , s:n)
 
 
 " Diff
