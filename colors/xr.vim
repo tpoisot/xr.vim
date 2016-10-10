@@ -42,8 +42,17 @@ let s:lbl = "8"
 let s:wh  = "7"
 let s:lwh = "15"
 
-if background == 
-
+if &background == "dark"
+    let s:f1 = s:bl
+    let s:f2 = s:lbl
+    let s:a1 = s:wh
+    let s:a2 = s:lwh
+else
+    let s:f1 = s:lwh
+    let s:f2 = s:wh
+    let s:a1 = s:lbl
+    let s:a2 = s:bl
+endif
 
 function Format(...)
     return "hi ". a:1 . " ctermfg='".a:2."' ctermbg='" . a:3 . "' cterm='". s:n . a:4 ."'"
@@ -53,21 +62,21 @@ endfunction
 " ----------------------------------------------------------------------------
 
 " Interface elements
-exe Format("LineNr"       , s:wh  , s:n    , s:n)
-exe Format("CursorLineNr" , s:lbl   , s:n    , s:n)
+exe Format("LineNr"       , s:f2  , s:n    , s:n)
+exe Format("CursorLineNr" , s:a1   , s:n    , s:n)
 exe Format("CursorLine"   , s:n    , s:n    , s:n)
 exe Format("SignColumn"   , s:n    , s:n    , s:n)
 exe Format("Search"       , s:n    , s:n    , s:r)
 exe Format("MatchParen"   , s:red    , s:n    , s:u)
-exe Format("Visual"       , s:n    , s:lwh  , s:n)
-exe Format("VertSplit"       , s:wh    , s:wh  , s:n)
-exe Format("StatusLine"       , s:n    , s:wh  , s:n)
-exe Format("StatusLineNC"       , s:lwh    , s:wh  , s:n)
+exe Format("Visual"       , s:n    , s:f1  , s:n)
+exe Format("VertSplit"       , s:f2    , s:f2  , s:n)
+exe Format("StatusLine"       , s:n    , s:f2  , s:n)
+exe Format("StatusLineNC"       , s:a1    , s:f2  , s:n)
 
-exe Format("Pmenu"       , s:bl    , s:lwh  , s:n)
-exe Format("PmenuSel"       , s:lwh    , s:lbl  , s:n)
-exe Format("PmenuSbar"       , s:lwh    , s:lwh  , s:n)
-exe Format("PmenuThumb"       , s:wh    , s:wh  , s:n)
+exe Format("Pmenu"       , s:a2    , s:f1  , s:n)
+exe Format("PmenuSel"       , s:f1    , s:a1  , s:n)
+exe Format("PmenuSbar"       , s:f1    , s:f1  , s:n)
+exe Format("PmenuThumb"       , s:f2    , s:f2  , s:n)
 
 
 " Diff
@@ -77,11 +86,11 @@ exe Format("DiffDelete"   , s:red , s:n    , s:n)
 exe Format("DiffText"     , s:bl  , s:n    , s:n)
 
 " Fold
-exe Format("FoldColumn"   , s:n    , s:lwh  , s:n)
-exe Format("Folded"       , s:n    , s:lwh  , s:n)
+exe Format("FoldColumn"   , s:n    , s:f1  , s:n)
+exe Format("Folded"       , s:n    , s:f1  , s:n)
 
 " Base elements
-exe Format("Comment"      , s:wh   , s:n    , s:i)
+exe Format("Comment"      , s:a1   , s:n    , s:i)
 exe Format("String"       , s:gre  , s:n    , s:n)
 exe Format("Identifier"   , s:blu  , s:n    , s:n)
 exe Format("Type"         , s:lblu , s:n    , s:n)
@@ -91,8 +100,8 @@ exe Format("Conditional"  , s:lmag , s:n    , s:n)
 exe Format("PreProc"      , s:cya  , s:n    , s:n)
 exe Format("Keyword"      , s:blu  , s:n    , s:n)
 exe Format("Conceal"      , s:yel  , s:n    , s:n)
-exe Format("Operator"     , s:wh   , s:n    , s:n)
-exe Format("Delimiter"    , s:wh   , s:n    , s:n)
+exe Format("Operator"     , s:a2   , s:n    , s:n)
+exe Format("Delimiter"    , s:a2   , s:n    , s:n)
 exe Format("Macro"        , s:lyel , s:n    , s:n)
 
 " Vim config
