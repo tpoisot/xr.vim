@@ -42,6 +42,9 @@ let s:lbl = "8"
 let s:wh  = "7"
 let s:lwh = "15"
 
+if background == 
+
+
 function Format(...)
     return "hi ". a:1 . " ctermfg='".a:2."' ctermbg='" . a:3 . "' cterm='". s:n . a:4 ."'"
 endfunction
