@@ -103,6 +103,7 @@ exe Format("Conceal"      , s:yel  , s:n    , s:n)
 exe Format("Operator"     , s:a2   , s:n    , s:n)
 exe Format("Delimiter"    , s:a2   , s:n    , s:n)
 exe Format("Macro"        , s:lyel , s:n    , s:n)
+exe Format("Special"        , s:lcya , s:n    , s:n)
 
 " Vim config
 exe Format("vimMapModKey" , s:lblu , s:n    , s:n)
