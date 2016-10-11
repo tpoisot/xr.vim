@@ -112,7 +112,7 @@ exe Format("vimOption"    , s:blu  , s:n    , s:n)
 " Make files
 exe Format("makeIdent"    , s:gre  , s:n    , s:n)
 exe Format("makeTarget"   , s:blu  , s:n    , s:b)
-exe Format("makeCommands" , s:bl   , s:n    , s:n)
+exe Format("makeCommands" , s:a2   , s:n    , s:n)
 
 " Spelling
 exe Format("SpellBad"     , s:n    , s:lred , s:n)
