@@ -65,11 +65,12 @@ endfunction
 exe Format("LineNr"       , s:f2  , s:n    , s:n)
 exe Format("CursorLineNr" , s:a1   , s:n    , s:n)
 exe Format("CursorLine"   , s:n    , s:n    , s:n)
+exe Format("NonText"   , s:n    , s:n    , s:n)
 exe Format("SignColumn"   , s:n    , s:n    , s:n)
 exe Format("Search"       , s:n    , s:n    , s:r)
 exe Format("MatchParen"   , s:lyel    , s:n    , s:n)
 exe Format("Visual"       , s:n    , s:f1  , s:n)
-exe Format("VertSplit"       , s:f2    , s:f2  , s:n)
+exe Format("VertSplit"       , s:f1    , s:f1  , s:n)
 exe Format("StatusLine"       , s:n    , s:f1  , s:n)
 exe Format("StatusLineNC"       , s:a1    , s:f1  , s:n)
 
