@@ -71,7 +71,7 @@ exe Format("MatchParen"   , s:lyel    , s:n    , s:n)
 exe Format("Visual"       , s:n    , s:f1  , s:n)
 exe Format("VertSplit"       , s:f2    , s:f2  , s:n)
 exe Format("StatusLine"       , s:n    , s:f2  , s:n)
-exe Format("StatusLineNC"       , s:lyel    , s:f2  , s:n)
+exe Format("StatusLineNC"       , s:bl    , s:f2  , s:n)
 
 exe Format("Pmenu"       , s:a2    , s:f1  , s:n)
 exe Format("PmenuSel"       , s:f1    , s:a1  , s:n)
