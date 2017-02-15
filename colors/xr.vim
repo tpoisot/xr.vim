@@ -125,7 +125,7 @@ exe Format("criticAddition"    , s:gre , s:n , s:i)
 exe Format("criticDeletion"    , s:red , s:n , s:i)
 
 " Pandoc
-exe Format("pandocCiteAnchor"    , s:a2 , s:n , s:n)
+exe Format("pandocCiteAnchor"    , s:a1 , s:n , s:n)
 exe Format("pandocCiteKey"    , s:gre , s:n , s:n)
 exe Format("pandocAtxHeader"    , s:gre , s:n , s:b)
 
