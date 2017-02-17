@@ -129,4 +129,8 @@ exe Format("pandocCiteAnchor"    , s:a1 , s:n , s:n)
 exe Format("pandocCiteKey"    , s:gre , s:n , s:n)
 exe Format("pandocAtxHeader"    , s:gre , s:n , s:b)
 
+" Dev notes
+exe Format("Todo"     , s:yel , s:n , s:n)
+exe Format("Debug"    , s:cya , s:n , s:n)
+
 "  }}}
