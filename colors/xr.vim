@@ -130,7 +130,9 @@ exe Format("pandocCiteKey"    , s:gre , s:n , s:n)
 exe Format("pandocAtxHeader"    , s:gre , s:n , s:b)
 
 " Dev notes
+syn match Bug contained "BUG"
 exe Format("Todo"     , s:yel , s:n , s:n)
 exe Format("Debug"    , s:cya , s:n , s:n)
+exe Format("Bug"    , s:red , s:n , s:n)
 
 "  }}}
