@@ -74,10 +74,11 @@ exe Format("VertSplit"       , s:f1    , s:f1  , s:n)
 exe Format("StatusLine"       , s:n    , s:f1  , s:b)
 exe Format("StatusLineNC"       , s:a1    , s:f1  , s:n)
 
-exe Format("Pmenu"          , s:a1    , s:f2  , s:n)
-exe Format("PmenuSel"       , s:f1    , s:a2  , s:n)
-exe Format("PmenuSbar"      , s:f1    , s:f1  , s:n)
-exe Format("PmenuThumb"     , s:f2    , s:f2  , s:n)
+" Autoc-complete menu
+exe Format("Pmenu"          , s:f1    , s:f2  , s:n)
+exe Format("PmenuSel"       , s:f1    , s:a1  , s:n)
+exe Format("PmenuSbar"      , s:f2    , s:f2  , s:n)
+exe Format("PmenuThumb"     , s:f1    , s:f1  , s:n)
 
 
 " Diff
