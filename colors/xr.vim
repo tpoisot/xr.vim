@@ -102,7 +102,7 @@ exe Format("Conditional"  , s:lmag , s:n    , s:n)
 exe Format("PreProc"      , s:cya  , s:n    , s:n)
 exe Format("Keyword"      , s:blu  , s:n    , s:n)
 exe Format("Conceal"      , s:yel  , s:n    , s:n)
-exe Format("Operator"     , s:a2   , s:n    , s:n)
+exe Format("Operator"     , s:a1   , s:n    , s:n)
 exe Format("Delimiter"    , s:a2   , s:n    , s:n)
 exe Format("Macro"        , s:lyel , s:n    , s:n)
 exe Format("Special"      , s:lcya , s:n    , s:n)
@@ -119,6 +119,9 @@ exe Format("vimOption"    , s:blu  , s:n    , s:n)
 exe Format("makeIdent"    , s:gre  , s:n    , s:n)
 exe Format("makeTarget"   , s:blu  , s:n    , s:b)
 exe Format("makeCommands" , s:a2   , s:n    , s:n)
+
+" R
+exe Format("rAssign"     , s:a1    , s:n , s:n)
 
 " Spelling
 exe Format("SpellBad"     , s:n    , s:lred , s:n)
