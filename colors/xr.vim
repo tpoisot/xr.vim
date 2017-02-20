@@ -138,4 +138,10 @@ exe Format("pandocAtxHeader"    , s:gre , s:n , s:b)
 exe Format("Todo"     , s:yel , s:n , s:n)
 exe Format("Debug"    , s:cya , s:n , s:n)
 
+" Mail
+exe Format("mailHeaderEmail"    , s:a2  , s:n , s:n)
+exe Format("mailEmail"          , s:yel , s:n , s:n)
+exe Format("mailSignature"      , s:f1  , s:n , s:n)
+exe Format("mailSubject"        , s:yel , s:n , s:b)
+
 "  }}}
