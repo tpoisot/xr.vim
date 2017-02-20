@@ -92,7 +92,7 @@ exe Format("FoldColumn"   , s:n    , s:f1  , s:n)
 exe Format("Folded"       , s:n    , s:f1  , s:n)
 
 " Base elements
-exe Format("Comment"      , s:a1   , s:n    , s:i)
+exe Format("Comment"      , s:f2   , s:n    , s:i)
 exe Format("String"       , s:gre  , s:n    , s:n)
 exe Format("Identifier"   , s:blu  , s:n    , s:n)
 exe Format("Type"         , s:lblu , s:n    , s:n)
