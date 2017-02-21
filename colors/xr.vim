@@ -79,6 +79,8 @@ exe Format("PmenuSel"       , s:f1    , s:a1  , s:n)
 exe Format("PmenuSbar"       , s:f1    , s:f1  , s:n)
 exe Format("PmenuThumb"       , s:f2    , s:f2  , s:n)
 
+" Title
+exe Format("Title"       , s:lyel    , s:n  , s:n)
 
 " Diff
 exe Format("DiffAdd"      , s:gre , s:n    , s:n)
