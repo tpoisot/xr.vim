@@ -74,10 +74,11 @@ exe Format("VertSplit"       , s:f1    , s:f1  , s:n)
 exe Format("StatusLine"       , s:n    , s:f1  , s:b)
 exe Format("StatusLineNC"       , s:a1    , s:f1  , s:n)
 
-exe Format("Pmenu"       , s:a2    , s:f1  , s:n)
+" Autoc-complete menu
+exe Format("Pmenu"          , s:f1    , s:f2  , s:n)
 exe Format("PmenuSel"       , s:f1    , s:a1  , s:n)
-exe Format("PmenuSbar"       , s:f1    , s:f1  , s:n)
-exe Format("PmenuThumb"       , s:f2    , s:f2  , s:n)
+exe Format("PmenuSbar"      , s:f2    , s:f2  , s:n)
+exe Format("PmenuThumb"     , s:f1    , s:f1  , s:n)
 
 " Title
 exe Format("Title"       , s:lyel    , s:n  , s:n)
@@ -93,7 +94,7 @@ exe Format("FoldColumn"   , s:n    , s:f1  , s:n)
 exe Format("Folded"       , s:n    , s:f1  , s:n)
 
 " Base elements
-exe Format("Comment"      , s:a1   , s:n    , s:i)
+exe Format("Comment"      , s:f2   , s:n    , s:i)
 exe Format("String"       , s:gre  , s:n    , s:n)
 exe Format("Identifier"   , s:blu  , s:n    , s:n)
 exe Format("Type"         , s:lblu , s:n    , s:n)
@@ -103,10 +104,14 @@ exe Format("Conditional"  , s:lmag , s:n    , s:n)
 exe Format("PreProc"      , s:cya  , s:n    , s:n)
 exe Format("Keyword"      , s:blu  , s:n    , s:n)
 exe Format("Conceal"      , s:yel  , s:n    , s:n)
-exe Format("Operator"     , s:a2   , s:n    , s:n)
+exe Format("Operator"     , s:a1   , s:n    , s:n)
 exe Format("Delimiter"    , s:a2   , s:n    , s:n)
 exe Format("Macro"        , s:lyel , s:n    , s:n)
-exe Format("Special"        , s:lcya , s:n    , s:n)
+exe Format("Special"      , s:lcya , s:n    , s:n)
+exe Format("Symbol"       , s:lred , s:n    , s:n)
+
+" Julia
+exe Format("juliaSymbol"  , s:lred , s:n    , s:n)
 
 " Vim config
 exe Format("vimMapModKey" , s:lblu , s:n    , s:n)
@@ -116,6 +121,9 @@ exe Format("vimOption"    , s:blu  , s:n    , s:n)
 exe Format("makeIdent"    , s:gre  , s:n    , s:n)
 exe Format("makeTarget"   , s:blu  , s:n    , s:b)
 exe Format("makeCommands" , s:a2   , s:n    , s:n)
+
+" R
+exe Format("rAssign"     , s:a1    , s:n , s:n)
 
 " Spelling
 exe Format("SpellBad"     , s:n    , s:lred , s:n)
@@ -134,5 +142,11 @@ exe Format("pandocAtxHeader"    , s:gre , s:n , s:b)
 " Dev notes
 exe Format("Todo"     , s:yel , s:n , s:n)
 exe Format("Debug"    , s:cya , s:n , s:n)
+
+" Mail
+exe Format("mailHeaderEmail"    , s:a2  , s:n , s:n)
+exe Format("mailEmail"          , s:yel , s:n , s:n)
+exe Format("mailSignature"      , s:f1  , s:n , s:n)
+exe Format("mailSubject"        , s:yel , s:n , s:b)
 
 "  }}}
