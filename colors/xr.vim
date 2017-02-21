@@ -73,7 +73,6 @@ exe Format("Visual"       , s:n    , s:f1  , s:n)
 exe Format("VertSplit"       , s:f1    , s:f1  , s:n)
 exe Format("StatusLine"       , s:n    , s:f1  , s:b)
 exe Format("StatusLineNC"       , s:a1    , s:f1  , s:n)
-exe Format("Comment"      , s:f2   , s:n    , s:i)
 
 " Autoc-complete menu
 exe Format("Pmenu"          , s:f1    , s:f2  , s:n)
@@ -95,28 +94,17 @@ exe Format("FoldColumn"   , s:n    , s:f1  , s:n)
 exe Format("Folded"       , s:n    , s:f1  , s:n)
 
 " Base elements
-exe Format("Identifier"   , s:mag  , s:n    , s:n)
-exe Format("Function"     , s:yel  , s:n    , s:n)
-
+exe Format("Comment"      , s:f2   , s:n    , s:i)
 exe Format("String"       , s:gre  , s:n    , s:n)
-
-exe Format("Constant"     , s:red  , s:n    , s:n)
-
-exe Format("Type"         , s:yel , s:n    , s:n)
-exe Format("StorageClass" , s:yel , s:n    , s:n)
-exe Format("Typedef"      , s:yel , s:n    , s:n)
-
-exe Format("Structure"    , s:cya , s:n    , s:n)
-
-exe Format("Statement"    , s:blu  , s:n    , s:n)
-
-exe Format("Operator"     , s:a1   , s:n    , s:n)
-exe Format("Keyword"      , s:cya  , s:n    , s:n)
-
+exe Format("Identifier"   , s:blu  , s:n    , s:n)
+exe Format("Type"         , s:lblu , s:n    , s:n)
 exe Format("Boolean"      , s:red  , s:n    , s:i)
+exe Format("Statement"    , s:mag  , s:n    , s:n)
 exe Format("Conditional"  , s:lmag , s:n    , s:n)
 exe Format("PreProc"      , s:cya  , s:n    , s:n)
+exe Format("Keyword"      , s:blu  , s:n    , s:n)
 exe Format("Conceal"      , s:yel  , s:n    , s:n)
+exe Format("Operator"     , s:a1   , s:n    , s:n)
 exe Format("Delimiter"    , s:a2   , s:n    , s:n)
 exe Format("Macro"        , s:lyel , s:n    , s:n)
 exe Format("Special"      , s:lcya , s:n    , s:n)
