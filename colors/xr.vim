@@ -144,7 +144,7 @@ exe Format("Todo"     , s:yel , s:n , s:n)
 exe Format("Debug"    , s:cya , s:n , s:n)
 
 " Mail
-exe Format("muttrcCommand"      , s:lbl,  s:n , s:n)
+exe Format("muttrcCommand"      , s:lblu, s:n , s:n)
 exe Format("mailHeaderEmail"    , s:a2  , s:n , s:n)
 exe Format("mailEmail"          , s:yel , s:n , s:n)
 exe Format("mailSignature"      , s:f1  , s:n , s:n)
