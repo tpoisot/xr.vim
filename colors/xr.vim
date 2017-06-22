@@ -136,8 +136,10 @@ exe Format("criticDeletion"    , s:red , s:n , s:i)
 
 " Pandoc
 exe Format("pandocCiteAnchor"    , s:a1 , s:n , s:n)
-exe Format("pandocCiteKey"    , s:gre , s:n , s:n)
-exe Format("pandocAtxHeader"    , s:gre , s:n , s:b)
+exe Format("pandocCiteKey"       , s:gre , s:n , s:n)
+exe Format("pandocAtxHeader"     , s:gre , s:n , s:b)
+exe Format("pandocEmphasis"      , s:lyel , s:n , s:i)
+exe Format("pandocStrong"        , s:lyel , s:n , s:b)
 
 " Dev notes
 exe Format("Todo"     , s:yel , s:n , s:n)
