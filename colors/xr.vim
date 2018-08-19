@@ -54,102 +54,102 @@ else
     let s:a2 = s:bl
 endif
 
-function Format(...)
-    return "hi ". a:1 . " ctermfg='".a:2."' ctermbg='" . a:3 . "' cterm='". s:n . a:4 ."'"
+function XRFormat(...)
+    return "hi! ". a:1 . " ctermfg='".a:2."' ctermbg='" . a:3 . "' cterm='". s:n . a:4 ."'"
 endfunction
 
 " Vim Highlighting: (see :help highlight-groups)"{{{
 " ----------------------------------------------------------------------------
 
 " Interface elements
-exe Format("LineNr"       , s:f2  , s:n    , s:n)
-exe Format("CursorLineNr" , s:a1   , s:n    , s:n)
-exe Format("CursorLine"   , s:n    , s:n    , s:n)
-exe Format("NonText"   , s:f1    , s:n    , s:n)
-exe Format("SignColumn"   , s:n    , s:n    , s:n)
-exe Format("Search"       , s:n    , s:n    , s:r)
-exe Format("MatchParen"   , s:lyel    , s:n    , s:n)
-exe Format("Visual"       , s:n    , s:f1  , s:n)
-exe Format("VertSplit"       , s:f1    , s:f1  , s:n)
-exe Format("StatusLine"       , s:n    , s:f1  , s:b)
-exe Format("StatusLineNC"       , s:a1    , s:f1  , s:n)
+exe XRFormat("LineNr"       , s:f2  , s:n    , s:n)
+exe XRFormat("CursorLineNr" , s:a1   , s:n    , s:n)
+exe XRFormat("CursorLine"   , s:n    , s:n    , s:n)
+exe XRFormat("NonText"   , s:f1    , s:n    , s:n)
+exe XRFormat("SignColumn"   , s:n    , s:n    , s:n)
+exe XRFormat("Search"       , s:n    , s:n    , s:r)
+exe XRFormat("MatchParen"   , s:lyel    , s:n    , s:n)
+exe XRFormat("Visual"       , s:n    , s:f1  , s:n)
+exe XRFormat("VertSplit"       , s:f1    , s:f1  , s:n)
+exe XRFormat("StatusLine"       , s:n    , s:f1  , s:b)
+exe XRFormat("StatusLineNC"       , s:a1    , s:f1  , s:n)
 
 " Autoc-complete menu
-exe Format("Pmenu"          , s:f1    , s:f2  , s:n)
-exe Format("PmenuSel"       , s:f1    , s:a1  , s:n)
-exe Format("PmenuSbar"      , s:f2    , s:f2  , s:n)
-exe Format("PmenuThumb"     , s:f1    , s:f1  , s:n)
+exe XRFormat("Pmenu"          , s:f1    , s:f2  , s:n)
+exe XRFormat("PmenuSel"       , s:f1    , s:a1  , s:n)
+exe XRFormat("PmenuSbar"      , s:f2    , s:f2  , s:n)
+exe XRFormat("PmenuThumb"     , s:f1    , s:f1  , s:n)
 
 " Title
-exe Format("Title"       , s:lyel    , s:n  , s:n)
+exe XRFormat("Title"       , s:lyel    , s:n  , s:n)
 
 " Diff
-exe Format("DiffAdd"      , s:gre , s:n    , s:n)
-exe Format("DiffChange"   , s:blu , s:n    , s:n)
-exe Format("DiffDelete"   , s:red , s:n    , s:n)
-exe Format("DiffText"     , s:bl  , s:n    , s:n)
+exe XRFormat("DiffAdd"      , s:gre , s:n    , s:n)
+exe XRFormat("DiffChange"   , s:blu , s:n    , s:n)
+exe XRFormat("DiffDelete"   , s:red , s:n    , s:n)
+exe XRFormat("DiffText"     , s:bl  , s:n    , s:n)
 
 " Fold
-exe Format("FoldColumn"   , s:n    , s:f1  , s:n)
-exe Format("Folded"       , s:n    , s:f1  , s:n)
+exe XRFormat("FoldColumn"   , s:n    , s:f1  , s:n)
+exe XRFormat("Folded"       , s:n    , s:f1  , s:n)
 
 " Base elements
-exe Format("Comment"      , s:f2   , s:n    , s:i)
-exe Format("String"       , s:gre  , s:n    , s:n)
-exe Format("Identifier"   , s:blu  , s:n    , s:n)
-exe Format("Type"         , s:lblu , s:n    , s:n)
-exe Format("Boolean"      , s:red  , s:n    , s:i)
-exe Format("Statement"    , s:mag  , s:n    , s:n)
-exe Format("Conditional"  , s:lmag , s:n    , s:n)
-exe Format("PreProc"      , s:cya  , s:n    , s:n)
-exe Format("Keyword"      , s:blu  , s:n    , s:n)
-exe Format("Conceal"      , s:yel  , s:n    , s:n)
-exe Format("Operator"     , s:a1   , s:n    , s:n)
-exe Format("Delimiter"    , s:a2   , s:n    , s:n)
-exe Format("Macro"        , s:lyel , s:n    , s:n)
-exe Format("Special"      , s:lcya , s:n    , s:n)
-exe Format("Symbol"       , s:lred , s:n    , s:n)
+exe XRFormat("Comment"      , s:f2   , s:n    , s:i)
+exe XRFormat("String"       , s:gre  , s:n    , s:n)
+exe XRFormat("Identifier"   , s:blu  , s:n    , s:n)
+exe XRFormat("Type"         , s:lblu , s:n    , s:n)
+exe XRFormat("Boolean"      , s:red  , s:n    , s:i)
+exe XRFormat("Statement"    , s:mag  , s:n    , s:n)
+exe XRFormat("Conditional"  , s:lmag , s:n    , s:n)
+exe XRFormat("PreProc"      , s:cya  , s:n    , s:n)
+exe XRFormat("Keyword"      , s:blu  , s:n    , s:n)
+exe XRFormat("Conceal"      , s:yel  , s:n    , s:n)
+exe XRFormat("Operator"     , s:a1   , s:n    , s:n)
+exe XRFormat("Delimiter"    , s:a2   , s:n    , s:n)
+exe XRFormat("Macro"        , s:lyel , s:n    , s:n)
+exe XRFormat("Special"      , s:lcya , s:n    , s:n)
+exe XRFormat("Symbol"       , s:lred , s:n    , s:n)
 
 " Julia
-exe Format("juliaSymbol"  , s:lred , s:n    , s:n)
+exe XRFormat("juliaSymbol"  , s:lred , s:n    , s:n)
 
 " Vim config
-exe Format("vimMapModKey" , s:lblu , s:n    , s:n)
-exe Format("vimOption"    , s:blu  , s:n    , s:n)
+exe XRFormat("vimMapModKey" , s:lblu , s:n    , s:n)
+exe XRFormat("vimOption"    , s:blu  , s:n    , s:n)
 
 " Make files
-exe Format("makeIdent"    , s:gre  , s:n    , s:n)
-exe Format("makeTarget"   , s:blu  , s:n    , s:b)
-exe Format("makeCommands" , s:a2   , s:n    , s:n)
+exe XRFormat("makeIdent"    , s:gre  , s:n    , s:n)
+exe XRFormat("makeTarget"   , s:blu  , s:n    , s:b)
+exe XRFormat("makeCommands" , s:a2   , s:n    , s:n)
 
 " R
-exe Format("rAssign"     , s:a1    , s:n , s:n)
+exe XRFormat("rAssign"     , s:a1    , s:n , s:n)
 
 " Spelling
-exe Format("SpellBad"     , s:n    , s:lred , s:n)
-exe Format("SpellCap"     , s:n    , s:lblu , s:n)
-exe Format("SpellRare"    , s:n    , s:lcya , s:n)
+exe XRFormat("SpellBad"     , s:n    , s:lred , s:n)
+exe XRFormat("SpellCap"     , s:n    , s:lblu , s:n)
+exe XRFormat("SpellRare"    , s:n    , s:lcya , s:n)
 
 " Critic Markup
-exe Format("criticAddition"    , s:gre , s:n , s:i)
-exe Format("criticDeletion"    , s:red , s:n , s:i)
+exe XRFormat("criticAddition"    , s:gre , s:n , s:i)
+exe XRFormat("criticDeletion"    , s:red , s:n , s:i)
 
 " Pandoc
-exe Format("pandocCiteAnchor"    , s:a1 , s:n , s:n)
-exe Format("pandocCiteKey"       , s:gre , s:n , s:n)
-exe Format("pandocAtxHeader"     , s:gre , s:n , s:b)
-exe Format("pandocEmphasis"      , s:lyel , s:n , s:i)
-exe Format("pandocStrong"        , s:lyel , s:n , s:b)
+exe XRFormat("pandocCiteAnchor"    , s:a1 , s:n , s:n)
+exe XRFormat("pandocCiteKey"       , s:gre , s:n , s:n)
+exe XRFormat("pandocAtxHeader"     , s:gre , s:n , s:b)
+exe XRFormat("pandocEmphasis"      , s:lyel , s:n , s:i)
+exe XRFormat("pandocStrong"        , s:lyel , s:n , s:b)
 
 " Dev notes
-exe Format("Todo"     , s:yel , s:n , s:n)
-exe Format("Debug"    , s:cya , s:n , s:n)
+exe XRFormat("Todo"     , s:yel , s:n , s:n)
+exe XRFormat("Debug"    , s:cya , s:n , s:n)
 
 " Mail
-exe Format("muttrcCommand"      , s:lblu, s:n , s:n)
-exe Format("mailHeaderEmail"    , s:a2  , s:n , s:n)
-exe Format("mailEmail"          , s:yel , s:n , s:n)
-exe Format("mailSignature"      , s:f1  , s:n , s:n)
-exe Format("mailSubject"        , s:yel , s:n , s:b)
+exe XRFormat("muttrcCommand"      , s:lblu, s:n , s:n)
+exe XRFormat("mailHeaderEmail"    , s:a2  , s:n , s:n)
+exe XRFormat("mailEmail"          , s:yel , s:n , s:n)
+exe XRFormat("mailSignature"      , s:f1  , s:n , s:n)
+exe XRFormat("mailSubject"        , s:yel , s:n , s:b)
 
 "  }}}
