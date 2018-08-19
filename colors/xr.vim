@@ -54,7 +54,7 @@ else
     let s:a2 = s:bl
 endif
 
-function XRFormat(...)
+function! XRFormat(...)
     return "hi! ". a:1 . " ctermfg='".a:2."' ctermbg='" . a:3 . "' cterm='". s:n . a:4 ."'"
 endfunction
 
