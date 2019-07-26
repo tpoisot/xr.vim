@@ -122,9 +122,6 @@ exe XRFormat("makeIdent"    , s:gre  , s:n    , s:n)
 exe XRFormat("makeTarget"   , s:blu  , s:n    , s:b)
 exe XRFormat("makeCommands" , s:a2   , s:n    , s:n)
 
-" R
-exe XRFormat("rAssign"     , s:a1    , s:n , s:n)
-
 " Spelling
 exe XRFormat("SpellBad"     , s:n    , s:lred , s:n)
 exe XRFormat("SpellCap"     , s:n    , s:lblu , s:n)
@@ -140,6 +137,8 @@ exe XRFormat("pandocCiteKey"       , s:gre , s:n , s:n)
 exe XRFormat("pandocAtxHeader"     , s:gre , s:n , s:b)
 exe XRFormat("pandocEmphasis"      , s:lyel , s:n , s:i)
 exe XRFormat("pandocStrong"        , s:lyel , s:n , s:b)
+exe XRFormat("pandocBlockQuote"        , s:a1 , s:n , s:b)
+exe XRFormat("pandocBlockMark"        , s:f2 , s:n , s:b)
 
 " Dev notes
 exe XRFormat("Todo"     , s:yel , s:n , s:n)
