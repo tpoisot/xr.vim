@@ -123,9 +123,9 @@ exe XRFormat("makeTarget"   , s:blu  , s:n    , s:b)
 exe XRFormat("makeCommands" , s:a2   , s:n    , s:n)
 
 " Spelling
-exe XRFormat("SpellBad"     , s:n    , s:lred , s:n)
-exe XRFormat("SpellCap"     , s:n    , s:lblu , s:n)
-exe XRFormat("SpellRare"    , s:n    , s:lcya , s:n)
+exe XRFormat("SpellBad"     , s:red    , s:n , s:u)
+exe XRFormat("SpellCap"     , s:lred    , s:n , s:u)
+exe XRFormat("SpellRare"    , s:lyel    , s:n , s:u)
 
 " Critic Markup
 exe XRFormat("criticAddition"    , s:gre , s:n , s:i)
