@@ -139,6 +139,8 @@ exe XRFormat("pandocEmphasis"      , s:lyel , s:n , s:i)
 exe XRFormat("pandocStrong"        , s:lyel , s:n , s:b)
 exe XRFormat("pandocBlockQuote"        , s:a1 , s:n , s:b)
 exe XRFormat("pandocBlockMark"        , s:f2 , s:n , s:b)
+exe XRFormat("pandocReferenceDefinition"  , s:blu , s:n , s:n)
+exe XRFormat("pandocReferenceLabel"  , s:lblu , s:n , s:i)
 
 " Dev notes
 exe XRFormat("Todo"     , s:yel , s:n , s:n)
