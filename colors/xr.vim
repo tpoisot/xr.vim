@@ -139,8 +139,11 @@ exe XRFormat("pandocEmphasis"      , s:lyel , s:n , s:i)
 exe XRFormat("pandocStrong"        , s:lyel , s:n , s:b)
 exe XRFormat("pandocBlockQuote"        , s:a1 , s:n , s:b)
 exe XRFormat("pandocBlockMark"        , s:f2 , s:n , s:b)
-exe XRFormat("pandocReferenceDefinition"  , s:blu , s:n , s:n)
+exe XRFormat("pandocReferenceDefinition"  , s:lyel , s:n , s:n)
 exe XRFormat("pandocReferenceLabel"  , s:lblu , s:n , s:i)
+exe XRFormat("pandocPipeTableDelims", s:s1, s:n, s:n)
+exe XRFormat("pandocPipeTableHeader", s:s1, s:n, s:n)
+exe XRFormat("pandocTableHeaderWord", s:gre, s:n, s:b)
 
 " Dev notes
 exe XRFormat("Todo"     , s:yel , s:n , s:n)
